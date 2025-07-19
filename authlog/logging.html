@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Authorization</title>
+     <script src="https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-with-polyfills-latest.js"></script>
+</head>
+<body>...
+   <script>
+   window.onload = function() {
+      window.YaAuthSuggest.init({
+                  client_id: 'b6064fbf970444b2bf53ec08a00ca75c',
+                  response_type: 'token',
+                  redirect_uri: 'https://ruaskerland.glitch.me/verificationcode.html'
+               },
+               'https://ruaskerland.glitch.me', {
+                  view: 'button',
+                  parentId: 'container',
+                  buttonView: 'main',
+                  buttonTheme: 'light',
+                  buttonSize: 'm',
+                  buttonBorderRadius: 25
+               }
+            )
+            .then(function(result) {
+               return result.handler()
+            })
+            .then(function(data) {
+               console.log('Сообщение с токеном: ', data);
+               document.body.innerHTML += `Сообщение с токеном: ${JSON.stringify(data)}`;
+            })
+            .catch(function(error) {
+               console.log('Что-то пошло не так: ', error);
+               document.body.innerHTML += `Что-то пошло не так: ${JSON.stringify(error)}`;
+            });
+      };
+   </script>
+</body>
+</html>

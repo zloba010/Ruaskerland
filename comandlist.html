@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команды для поиска</title>
+    <style>
+        /* Основные стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #343a40;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #6c757d;
+            font-size: 16px;
+        }
+        
+        .command-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            display: grid;
+            gap: 20px;
+        }
+        
+        .command {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-radius: 4px;
+            background: #f1f1f1;
+            transition: background 0.3s;
+        }
+        
+        .command:hover {
+            background: #e9ecef;
+        }
+        
+        .command-title {
+            font-weight: bold;
+            color: #1b1e21;
+            font-size: 18px;
+            margin-right: 20px;
+        }
+        
+        .command-description {
+            color: #6c757d;
+            font-size: 14px;
+            width: 70%;
+        }
+        
+        .command-icon {
+            color: #1b1e21;
+            font-size: 24px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Команды для формы поиска на сайте RuAskerLand</h1>
+        <p>Узнайте, какие особые команды можно использовать в форме поиска для иного использования RuAskerLand.</p>
+    </div>
+    
+    <div class="command-container">
+        <div class="command">
+            <div class="command-title">/radio</div>
+            <div class="command-description">Включает Радио с несколькими радиостанциями прямо на страничке.</div>
+            <i class="command-icon">📻</i>
+        </div>
+       <div class="command">
+            <div class="command-title">/next</div>
+            <div class="command-description">Переключает на следущую радиостанцию. Не сработает пока не включено Радио.</div>
+            <i class="command-icon">➡️</i>
+        </div>
+       <div class="command">
+            <div class="command-title">/previous</div>
+            <div class="command-description">Переключает на предыдущую радиостанцию. Не сработает пока не включено Радио.</div>
+            <i class="command-icon">⬅️</i>
+        </div>
+              <div class="command">
+            <div class="command-title">/stop</div>
+            <div class="command-description">Выключает Радио. Не сработает пока не включено Радио.</div>
+            <i class="command-icon">⛔️</i>
+        </div>
+        
+        <div class="command">
+            <div class="command-title">/qr</div>
+            <div class="command-description">Откроет в новой вкладке QR-Код, ведущий на сайт RuAskerLand. QR-Кодом можно поделится например с друзьями)</div>
+            <i class="command-icon">🔳</i>
+        </div>
+    </div>
+</body>
+</html>

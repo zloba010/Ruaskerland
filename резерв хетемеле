@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="Ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta property="og:title" content="Ru Asker Land v.4.1.7">
+        <meta property="og:site_name" content="Russian express panel">
+        <meta property="og:url" content="https://ruaskerland.glitch.me/">
+        <meta property="og:description" content="Российская, комфортная и минималистичная стартовая страница для вашего браузера">
+        <meta property="og:image" content="https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/export202410121117177924.png?v=1728728844616">
+        <meta property="og:image:width" content="968">
+        <meta property="og:image:height" content="504">
+        <meta name="yandex-verification" content="3384ff2995e5973b">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>RuAskerLand v.4.1.7</title>
+        <link rel="manifest" href="webmanifest.json">
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+        <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/%D0%BE%D1%87%D0%B5%D0%BD%D1%8C%D0%BD%D0%BE%D0%B2%D0%BE%D0%B5%D0%BB%D0%BE%D0%B3%D0%BE%20(2).png?v=1728723241886">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    </head>
+ <body oncontextmenu="return false;">
+    
+  
+      <!-- Виджет телефона -->
+    <div id="phone-widget" class="phone-widget">
+        <div id="phone-screen" class="phone-screen">
+            <h3>Голосовой чат-бот RUsik</h3>
+            <div id="chat-box" class="chat-box">
+                <!-- Здесь будут отображаться сообщения -->
+            </div>
+            <div class="chat-input">
+                <button id="start-voice" onclick="startVoiceInput()">💬</button>
+                <input type="text" id="text-input" placeholder="Напишите сообщение...">
+                <button onclick="sendMessage()">✅</button>
+            </div>
+        </div>
+    </div>
+  <script>
+  // Базовый набор ответов чат-бота
+let knowledgeBase = {
+    "Привет": "Здравствуйте!",
+  "привет": "Здравствуйте!",
+  "Здравствуйте":"Доброго времени суток",
+  "здравствуйте":"Доброго времени суток",
+  "Доброго времени суток":"И вам того же!",
+  "доброго времени суток":"И вам того же!",
+  "ку-ку":"Йоу, чё как.",
+  "ку-ку":"Йоу, че как",
+    "Как тебя зовут": "Я — ваш виртуальный помощник. Меня зовут Русик",
+  "как тебя зовут": "Я — ваш виртуальный помощник. Меня зовут Русик",
+    "Что ты умеешь": "Я могу отвечать на вопросы и помогать вам! Если вы хотите пообщаться - тогда просто задавайте какие-нибудь вопросы. если вы хотите что-то найти в интернете тогда перед запросом скажите мне слово найди или поищи, тогда я найду нужное в интернете.",
+    "что ты умеешь": "Я могу отвечать на вопросы и помогать вам! Если вы хотите пообщаться - тогда просто задавайте какие-нибудь вопросы. если вы хотите что-то найти в интернете тогда перед запросом скажите мне слово найди или поищи, тогда я найду нужное в интернете.",
+  "Что ты можешь":"Я могу отвечать на вопросы и помогать вам! Если вы хотите пообщаться - тогда просто задавайте какие-нибудь вопросы. если вы хотите что-то найти в интернете тогда перед запросом скажите мне слово найди или поищи, тогда я найду нужное в интернете.",
+    "что ты можешь":"Я могу отвечать на вопросы и помогать вам! Если вы хотите пообщаться - тогда просто задавайте какие-нибудь вопросы. если вы хотите что-то найти в интернете тогда перед запросом скажите мне слово найди или поищи, тогда я найду нужное в интернете.",
+    "Какая сейчас погода": "погода? я не знаю. но могу поискать. для этого скажите мне - найди какая сейчас погода.",
+  "какая сейчас погода":"погода? я не знаю. но могу поискать. для этого скажите мне - найди какая сейчас погода.",
+  "Сколько будет 150 + 150":"ахаха, не смешно",
+  "сколько будет 150 + 150":"ахаха, не смешно",
+  "Отсоси у тракториста":"честно сказать, с юмором у вас все плохо",
+  "отсоси у тракториста":"честно сказать, с юмором у вас все плохо",
+  "Кто президент Росиии":"Президент Российской Федерации - Владимир Владимирович Путин. крутой мужик, мудрый политик, пример для граждан страны, и просто великий человек.",
+  "кто президент России":"Президент Российской Федерации - Владимир Владимирович Путин. крутой мужик, мудрый политик, пример для граждан страны, и просто великий человек.",
+  "Кто президент РФ":"Президент Российской Федерации - Владимир Владимирович Путин. крутой мужик, мудрый политик, пример для граждан страны, и просто великий человек.",
+  "кто президент РФ":"Президент Российской Федерации - Владимир Владимирович Путин. крутой мужик, мудрый политик, пример для граждан страны, и просто великий человек.",
+  "Кто такой Путин":"Президент Российской Федерации - Владимир Владимирович Путин. крутой мужик, мудрый политик, пример для граждан страны, и просто великий человек.",
+  "кто такой Путин":"Президент Российской Федерации - Владимир Владимирович Путин. крутой мужик, мудрый политик, пример для граждан страны, и просто великий человек.",
+  "Почему тебя назвали Русик":"А почему вас назвали вашем именем ? вот и я не знаю.",
+  "почему тебя назвали Русик":"а почему вас назвали вашем именем ? вот и я не знаю",
+  "Расскажи о себе":"Я Русик. Голосовой помошник. я творение програмиста, чей никнейм Steward_Kizami. Своего голоса у меня нет. Но я говорю тем голосом - который установлен у вас на устройстве. например если вы установите себе другой голосовой движок - то и я заговорю другим голосом.",
+  "расскажи о себе":"Я Русик. Голосовой помошник. я творение програмиста, чей никнейм Steward_Kizami. Своего голоса у меня нет. Но я говорю тем голосом - который установлен у вас на устройстве. например если вы установите себе другой голосовой движок - то и я заговорю другим голосом.",
+  "Расскажи шутку":"Сидела как то русалка... А нечего было жаб из соседнего болота в море переманивать.",
+  "расскажи прикол":"тук-тук. кто там ? конь в пальто и бабка с пистолетом. да шучу-шучу. я вышибала из вашего банка кредит ваш пришел обсудить.",
+  "Какой сегодня день":"Сегодня " + new Date().toLocaleDateString(),
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
+  "как дела":"Уменя всё отлично, спасибо!",
+    "Как дела": "У меня всё отлично, спасибо!"
+};
+
+// Функция для отображения сообщений
+function displayMessage(message, sender) {
+    const chatBox = document.getElementById('chat-box');
+    const messageDiv = document.createElement('div');
+    messageDiv.classList.add('chat-message', sender);
+    messageDiv.innerText = message;
+    chatBox.appendChild(messageDiv);
+    chatBox.scrollTop = chatBox.scrollHeight; // Прокрутка вниз
+}
+    
+    
+
+// Отправка сообщения пользователем
+function sendMessage() {
+    const userInput = document.getElementById('text-input').value.trim();
+    if (userInput === "") return;
+
+    // Отображаем сообщение пользователя
+    displayMessage(userInput, 'user');
+    document.getElementById('text-input').value = "";
+
+    // Ответ чат-бота
+    const botResponse = getBotResponse(userInput);
+    displayMessage(botResponse, 'bot');
+
+    // Ответить вслух
+    speak(botResponse);
+
+    // Если пользователь просит что-то найти в интернете, выполнить поиск
+    if (userInput.toLowerCase().includes("найди") || userInput.toLowerCase().includes("поищи")) {
+        const query = userInput.replace("найди", "").replace("поищи", "").trim();
+        searchInYandex(query);
+    }
+}
+
+// Получение ответа чат-бота
+function getBotResponse(userInput) {
+    if (knowledgeBase[userInput]) {
+        return knowledgeBase[userInput];
+    }
+    return "Извините, я не понял вашего вопроса.";
+}
+
+// Голосовой вывод
+function speak(message) {
+    const utterance = new SpeechSynthesisUtterance(message);
+    utterance.lang = 'ru-RU';
+    speechSynthesis.speak(utterance);
+}
+
+// Функция для голосового ввода
+function startVoiceInput() {
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.lang = "ru-RU";
+    recognition.start();
+
+    recognition.onresult = function(event) {
+        const voiceInput = event.results[0][0].transcript;
+        document.getElementById('text-input').value = voiceInput;
+        sendMessage(); // Отправить сообщение после голосового ввода
+    };
+  
+
+    recognition.onerror = function(event) {
+        alert('Ошибка голосового ввода: ' + event.error);
+    };
+}
+
+// Поиск в Яндексе
+function searchInYandex(query) {
+  let yandexSearchURL = `https://yandex.ru/search/?text=${encodeURIComponent(query)}`;
+  speak(`Ищу информацию по запросу: ${query}`);
+  window.open(yandexSearchURL, '_blank');
+}
+
+// Добавить слушатель событий для ввода с клавиатуры
+document.getElementById('text-input').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        sendMessage();
+    }
+});
+  </script>
+<!-- Конец Виджета телефона -->
+  
+  
+  
+  
+  
+  
+                            <!-- Кнопка для открытия новостей -->
+<button id="newsButton" class="news-button">
+  <i class="fa fa-newspaper-o"></i> Новости
+</button>
+
+<div id="newsModal" class="modal">
+  <div class="modal-content">
+    <button id="closeNewsModal" class="close-button">&times;</button>
+    <div id="newsFeed" class="news-feed"></div>
+  </div>
+</div><style>
+/* Кнопка для открытия новостей */
+.news-button {
+position: fixed;
+    bottom: 10px;
+    left: 5px;
+    padding: 15px 30px;
+    background-color: #0000007a;
+    color: white;
+    font-size: 16px;
+    border: solid;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 849;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.news-button i {
+  font-size: 20px; /* Размер иконки */
+}
+
+.news-button:hover {
+  background-color: #0016ff7a;
+}
+
+/* Модальное окно */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Затемнение фона */
+  z-index: 10000;
+  overflow: hidden;
+  cursor: pointer; /* Курсор для боковых кликов */
+}
+
+/* Контент модального окна */
+.modal-content {
+    position: relative;
+    width: 80%;
+    height: 90%;
+    margin: 10px auto;
+    background: repeating-radial-gradient(#0014ff, #000837, #0001ff 260px);
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: solid #ffffff;
+    border-radius: 25px;
+    overflow-y: auto;
+    cursor: default;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+/* Кнопка для закрытия (крестик) */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  color: #333;
+  background: transparent;
+  border: solid white;
+  border-radius:55px;
+  background-color:#000000b0;
+  cursor: pointer;
+  color:red;
+}
+
+.close-button:hover {
+  color: black;
+  border-color: black;
+  background-color:#dcff00;
+}
+
+/* Новостная лента */
+.news-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 100%;
+    max-width: 97%;
+    overflow-y: auto;
+    padding-left: 55px;
+}
+
+
+  
+  
+  
+  
+  #newsFeed::-webkit-scrollbar {
+  width: 10px;
+}
+
+#newsFeed::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+#newsFeed::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+  
+  
+  
+  
+  
+  
+.news-item {
+    display: flex;
+    gap: 15px;
+    max-width: 98%;
+    padding-left: 5px;
+    background-color: #414141;
+    padding: 15px;
+    border: solid #00ecff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-5px); /* Эффект поднятия при наведении */
+  background-color: #636363;
+}
+
+.news-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border:solid black;
+  border-radius: 15px;
+}
+
+.news-item .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.news-item .description {
+  padding-top: 20px;
+  font-size: 16px;
+  color: #c0c0c0;
+}
+
+/* Адаптивная верстка */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+  }
+
+  .news-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-item img {
+    width: 100px;
+    height: 100px;
+  }
+}
+  </style><script>
+const newsButton = document.getElementById('newsButton');
+const newsModal = document.getElementById('newsModal');
+const closeNewsModal = document.getElementById('closeNewsModal');
+const newsFeed = document.getElementById('newsFeed');
+
+// Функция для открытия модального окна
+newsButton.addEventListener('click', () => {
+  newsModal.style.display = 'block';
+  loadNews(); // Загружаем новости при открытии окна
+});
+
+// Закрытие модального окна по клику по бокам
+newsModal.addEventListener('click', (event) => {
+  if (event.target === newsModal) {
+    newsModal.style.display = 'none';
+  }
+});
+
+// Функция для закрытия модального окна по кнопке крестика
+closeNewsModal.addEventListener('click', () => {
+  newsModal.style.display = 'none';
+});
+
+// Функция для загрузки новостей
+async function loadNews() {
+  try {
+    const response = await fetch('https://newsruaskerland.glitch.me/news.json'); // Путь к вашему файлу JSON
+    const data = await response.json();
+    console.log('Полученные данные:', data);
+    displayNews(data.articles); // Отображаем новости
+  } catch (error) {
+    console.error('Ошибка при загрузке новостей:', error);
+  }
+}
+
+// Функция для отображения новостей на странице
+function displayNews(articles) {
+  newsFeed.innerHTML = ''; // Очищаем старые новости
+  articles.forEach(article => {
+    const newsItem = document.createElement('div');
+    newsItem.classList.add('news-item');
+    
+    // Создаем HTML для новости
+    newsItem.innerHTML = `
+      <img src="${article.image}" alt="${article.title}">
+      <div>
+        <div class="title">${article.title}</div>
+        <div class="description">${article.description}</div>
+      </div>
+    `;
+    
+    // При клике открывается источник новости
+    newsItem.addEventListener('click', () => {
+      window.open(article.url, '_blank');
+    });
+    
+    newsFeed.appendChild(newsItem);
+  });
+}
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="preloader">
+        <figure>
+            <img src="https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/%D0%BE%D1%87%D0%B5%D0%BD%D1%8C%D0%BD%D0%BE%D0%B2%D0%BE%D0%B5%D0%BB%D0%BE%D0%B3%D0%BE%20(1).png?v=1728723087748">
+            <figcaption>
+                <div class="progress"></div>
+                <script>
+                    //helper function-> return <DOMelement>
+                    function elt(type, prop, ...childrens) {
+                        let elem = document.createElement(type);
+                        if (prop)
+                            Object.assign(elem, prop);
+                        for (let child of childrens) {
+                            if (typeof child == "string")
+                                elem.appendChild(document.createTextNode(child));
+                            else
+                                elem.appendChild(elem);
+                        }
+                        return elem;
+                    }
+
+                    //Progress class
+                    class Progress {
+                        constructor(now, min, max, options) {
+                            this.dom = elt("div", {
+                                className: "progress-bar"
+                            });
+                            this.min = min;
+                            this.max = max;
+                            this.intervalCode = 0;
+                            this.now = now;
+                            this.syncState();
+                            if (options.parent) {
+                                document.querySelector(options.parent).appendChild(this.dom);
+                            } else
+                                document.body.appendChild(this.dom)
+                        }
+
+                        syncState() {
+                            this.dom.style.width = this.now + "%";
+                        }
+
+                        startTo(step, time) {
+                            if (this.intervalCode !== 0)
+                                return;
+                            this.intervalCode = setInterval( () => {
+                                if (this.now + step > this.max) {
+                                    this.now = this.max;
+                                    this.syncState();
+                                    clearInterval(this.interval);
+                                    this.intervalCode = 0;
+                                    return;
+                                }
+                                this.now += step;
+                                this.syncState()
+                            }
+                            , time)
+                        }
+                        end() {
+                            this.now = this.max;
+                            clearInterval(this.intervalCode);
+                            this.intervalCode = 0;
+                            this.syncState();
+                        }
+                    }
+
+                    let pb = new Progress(15,0,100,{
+                        parent: ".progress"
+                    });
+
+                    //arg1 -> step length
+                    //arg2 -> time(ms)
+                    pb.startTo(5, 500);
+
+                    //end to progress after 5s
+                    setTimeout( () => {
+                        pb.end()
+                    }
+                    , 1300)
+                </script>
+                ❤️️Мы рады тебе на Ru Asker Land❤️️!
+            </figcaption>
+        </figure>
+    </div>
+    <input type="checkbox" id="nav-toggle" hidden>
+    <nav class="nav">
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <h2 class="logo">
+            <a href="https://ruaskerland.glitch.me/">RuAskerLand🔍</a>
+            <div class="service">
+                <br>сервисы
+            </div>
+        </h2>
+        <ul>
+            <li>
+                <a href="https://www.avito.ru/">Доски обьявлений Avito</a>
+            </li>
+            <li>
+                <a href="https://www.dns-shop.ru/">DNS - Интернет магазин</a>
+            </li>
+            <li>
+                <a href="https://www.wildberries.ru/">Wildberries</a>
+            </li>
+            <li>
+                <a href="https://www.ozon.ru/">Ozon</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/">YouTube</a>
+            <li>
+                <a href="https://yootv.ru/ctv.html">Российское ТВ Онлайн</a>
+            </li>
+            <li>
+                <a href="https://ru.wikipedia.org/">Википедия</a>
+            </li>
+            <li>
+                <a href="https://translate.yandex.ru/">Яндекс Переводчик</a>
+            </li>
+            <li>
+                <a href="https://docs.google.com/">Google Office Online</a>
+            </li>
+            <li>
+                <a href="https://discord.com/">Discord</a>
+            </li>
+            <li>
+                <a href="https://web.telegram.org/">Web Telegram</a>
+            </li>
+            <li>
+                <a href="https://pixlr.com/ru/editor/">Графический редактор</a>
+            </li>
+            <li>
+                <a href="https://www.desmos.com/fourfunction?lang=ru">Калькулятор онлайн</a>
+            </li>
+            <li>
+                <a href="https://github.com/">GitHub</a>
+            </li>
+</li></ul></nav>
+<select class="selector" name="sbg" id="sbg">
+    <option value="settheme">Выбор фона</option>
+  <optgroup label="Стандартные темы">
+    <option value="NightTheme">Ночная тема</option>
+    <option value="LightTheme">Светлая тема</option>
+    </optgroup>
+    <optgroup label="Статичные фоны">
+    <option value="darkpink">Dark-Pink тема</option>
+    <option value="spokoistvo">Умиротворенность</option>
+    <option value="biemwe">BMW Alpina</option>
+    <option value="babacatana">Леди Самурай</option>
+    <option value="kover">Москва Поостапокалипис</option>
+    <option value="carm">Nissan GTR</option>
+    <option value="bobgubka">Губка Боб</option>
+    <option value="greenles">Лес у озера</option>
+    <option value="kakasi">Какаши-Хатаке</option>
+    <option value="vicecity">Vice City</option>
+    <option value="taycan">За рулем</option>
+    <option value="gow">God of War</option>
+    <option value="asphalt">след на асфальте</option>
+    <option value="womantwo">Вумен</option>
+      </optgroup>
+  <optgroup label="Динамические фоны">
+    <option value="samuray">Печать на клавиатуре</option>
+    <option value="volna">Волны</option>
+    <option value="video">Таинственная канализация</option>
+    <option value="darkside">Мобильные сети</option>
+    <option value="mrak">Мрачная комната</option>
+    <option value="cubes">Кубы</option>
+    <option value="cpasebottle">Космический корабль</option>
+    <option value="goduck">Идущий утенок</option>
+    <option value="moremount">Море и скалы</option>
+    <option value="eskalator">Эскалатор</option>
+    </optgroup>
+</select>
+<script>
+    window.addEventListener("load", (event) => {
+        let bg = localStorage.getItem("selectedBG");
+        if (bg) {
+            setBG(bg);
+        } else {
+            setBG("bg1");
+        }
+
+        if (sbg) {
+            sbg.addEventListener('change', (event) => {
+                localStorage.setItem("selectedBG", event.target.value);
+                setBG(event.target.value);
+            }
+            );
+        }
+    }
+    );
+    function setBG(bgi) {
+        css = document.body.className;
+        cssBg = css.split(" ").pop();
+        document.body.className = document.body.className.replace(cssBg, bgi);
+    }
+</script>
+  
+  
+  
+  
+<div id="timeWidget">--:--</div>
+<style>
+    #timeWidget {
+        position: absolute;
+        top: -1px;
+        left: 41%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.50);
+        color: #ffffffd4;
+        padding: 1px 17px;
+        border-radius: 5px;
+        font-size: 24px;
+        opacity: 0.7;
+        transition: opacity 3s ease-in-out;
+        border: solid;
+        border-radius: 0px 0px 15px 15px;
+        font-family: 'Mercury', sans-serif;
+        font-size: 35px;
+        cursor: pointer;
+    }
+  #timeWidget:hover{
+border-color: black;
+background-color: yellow;
+color:black;
+}
+</style>
+  <script>
+    let isFullscreen = false;
+
+    function updateTime() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const timeString = `${hours}:${minutes}`;
+        document.getElementById('timeWidget').textContent = timeString;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const widget = document.getElementById('timeWidget');
+        const speechSynthesis = window.speechSynthesis;
+
+        // Обработка одиночного клика
+widget.addEventListener('click', () => {
+widget.textContent = `>тык<`;
+});
+
+        // Обработка двойного клика
+// Функция для получения мужского голоса
+function getMaleVoice() {
+    const voices = speechSynthesis.getVoices();
+    return voices.find(voice => voice.gender === 'male');
+}
+
+// Обработчик двойного клика     
+widget.addEventListener('dblclick', () => {
+    // Получаем текущее время
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    
+    // Формируем текст для озвучивания
+    const text = `Сейчас ${hours} часов ${minutes} минут`;
+    
+    // Создаем объект для синтеза речи
+    const utterance = new SpeechSynthesisUtterance(text);
+    
+    // Получаем и устанавливаем мужской голос
+    const voice = getMaleVoice();
+    if (voice) {
+        utterance.voice = voice;
+    }
+    
+    // Запускаем озвучивание
+    speechSynthesis.speak(utterance);
+});
+      
+      //обработка тройного клика
+      let clickCount = 0;
+let lastClickTime = 0;
+const CLICK_DELAY = 300; // Максимальное время между кликами в миллисекундах
+const targetUrl = 'https://ruaskerland.glitch.me/time-is-dangerous.html'; // URL для перехода
+
+widget.addEventListener('click', (e) => {
+ const now = new Date().getTime();
+ 
+ // Проверяем, достаточно ли времени прошло с последнего клика
+ if (now - lastClickTime > CLICK_DELAY) {
+ clickCount = 1;
+ } else {
+ clickCount++;
+ }
+ 
+ lastClickTime = now;
+ 
+ // Если было 3 клика за заданное время
+ if (clickCount === 3) {
+ window.location.href = targetUrl;
+ clickCount = 0; // Сбрасываем счетчик
+ }
+});
+      
+        // Первоначальное обновление времени
+        updateTime();
+        setInterval(updateTime, 500);
+    });
+</script>
+        <dfn title="Экспресс-Панель">
+            <button id="openButton">
+                <strong>⇒</strong>
+            </button>
+        </dfn>
+        <div id="modal">
+            <div id="content">
+                <button id="closeButton">❌</button>
+                <object id="objj" type="text/html" data="exp.html" style="width: 100%; height: 100%; border-radius: 25px; background: black;"></object>
+            </div>
+        </div>
+        <script>
+            const openButton = document.getElementById('openButton');
+            const modal = document.getElementById('modal');
+            const closeButton = document.getElementById('closeButton');
+
+            openButton.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                modal.classList.add('fadeIn');
+                modal.classList.remove('fadeOut');
+            }
+            );
+
+            closeButton.addEventListener('click', () => {
+                modal.classList.add('fadeOut');
+                setTimeout( () => {
+                    modal.style.display = 'none';
+                    modal.classList.remove('fadeIn');
+                }
+                , 500);
+                // Время анимации исчезновения
+            }
+            );
+        </script>
+        <a href="https://ruaskerland.glitch.me/setup/start.html" class="wrapper-setup" target="_blank">
+            <div class="setup"></div>
+        </a>
+        <div class="setup__title">
+            <p>Установить в качестве главной страницы</p>
+        </div>
+        <header>
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="logo">
+                        <span class="white">Ru</span>
+                        <span class="blue">asker</span>
+                        <span class="red">Land</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <form class="search_form" action="https://ya.ru/" method="GET">
+                  <div id="missionMessage" class="mission-message hidden"></div>
+                    <label class="visually-hidden" for="search">Наqти</label>
+                    <input id="search" name="q" class="search" type="text" placeholder="что будем искать ?" autofocus>
+                    <button class="search_btn" type="submit">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd" viewbox="0 0 20 20">
+                                <path class="search__icon-shape" d="M13.15 8.74c-0.38,2.69 -2.69,4.91 -5.83,4.49 -2.58,-0.35 -4.87,-2.71 -4.45,-5.82 0.35,-2.61 2.85,-4.88 5.81,-4.44 2.56,0.38 4.92,2.7 4.47,5.77zm-0.81 5.01c0.75,0.48 4.99,5.24 5.46,5.25 0.39,-0.11 1.15,-0.84 1.2,-1.28 -0.06,-0.34 -4.53,-4.52 -5.23,-5.37 0.16,-0.54 1.71,-2.12 1.3,-5.22 -0.76,-5.8 -7.98,-8.18 -12,-4.06 -5.11,5.22 0.02,13.75 6.97,11.78 1.42,-0.41 1.74,-0.89 2.3,-1.1z"/>
+                            </svg>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <button class="btn" type="button">
+                <span>
+                    <svg width="27px" height="27px" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <rect fill="none" height="7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="7" x="14.5" y="2.5"/>
+                        <rect fill="none" height="7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="7" x="14.5" y="14.5"/>
+                        <rect fill="none" height="7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="7" x="2.5" y="2.5"/>
+                        <rect fill="none" height="7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="7" x="2.5" y="14.5"/>
+                    </svg>
+                </span>
+            </button>
+            <div class="dm-overlay">
+                <div class="dm-cell">
+                    <div class="dm-modal">
+                        <button class="close" id="close">
+                            <span>
+                                <svg width="32px" height="32px" viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione" preserveaspectratio="xMidYMid meet">
+                                    <path fill="#ff5a79" d="M62 10.6L53.4 2L32 23.4L10.6 2L2 10.6L23.4 32L2 53.4l8.6 8.6L32 40.6L53.4 62l8.6-8.6L40.6 32z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <h2 class="dm-modal_title">Наши серсисы и другое.</h2>
+                        <div class="btn-group">
+                            <a class="button-link" href="https://keytestboard.glitch.me/" title="keytest" id="rutube">
+                                <span class="button-link_text">Тест Клавиатуры</span>
+                            </a>
+                            <a class="button-link" href="https://ruaskerland-read.glitch.me/" title="readbook" id="music">
+                                <span class="button-link_text">Web-Читалка книг</span>
+                            </a>
+                            <a class="button-link" href="https://writesite.glitch.me/" title="writesite" id="auto">
+                                <span class="button-link_text">Write-Sit`er</span>
+                            </a>
+                            <a class="button-link" href="https://ruaskerland.glitch.me/privacy-policy.html" title="politika" id="vk">
+                                <span class="button-link_text">Политика Конфиденциальности</span>
+                            </a>
+                            <a href="https://www.donationalerts.com/r/kizamisteward" class="button-link" title="donate" id="gosuslugi">
+                                <span class="button-link_text">Пожертвовать на кофе</span>
+                            </a>
+                            <a class="button-link" href="mailto:skillstarika@gmail.com?cc=&subject=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%B2%D0%B0%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83%3A" title="mail" id="mail">
+                                <span class="button-link_text">Написать нам на почту</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>     
+  <script src="script.js"></script>
+     </body>
+    </html>

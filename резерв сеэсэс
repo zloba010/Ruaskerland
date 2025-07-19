@@ -1,0 +1,1461 @@
+:root {
+    --prymari-violet: #1c1c1c;
+    --mobile--hover-green: #fff766
+}
+
+/*типа запрет ротации моб устройства
+@media only screen and (min-width: 415px) and (max-width: 1279px) {
+    html:before {
+        content: 'Переверните устройство в портретный режим или откройте сайт с компьютера.';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        margin: auto;
+        background-image: url(https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/600na90-0000000000000000360_F_232468910_.jpg?v=1740688052369);
+        background-repeat: repeat-x;
+        background-color: black;
+        z-index: 999999;
+        text-align: center;
+        width: 100%;
+        height: 241px;
+        box-shadow: 0px 0px 0px 84px #000000;
+    }*/ /* если нужно запретить поворот экрана на сайте раскомментируй */
+
+/*типа запрет ротации моб устройства*/
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px,1px,1px,1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden
+}
+
+html {
+    height: 100%;
+    cursor: url("https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/export202410090327563397.png?v=1728434546803"),default;
+  scroll-behavior: smooth;
+}
+
+*,::before,::after {
+    box-sizing: border-box
+}
+
+.progress-bar {
+    height: 20px;
+    background: #ec96f5;
+    box-shadow: 2px 14px 15px -7px rgba(30,166,250,.36);
+    border-radius: 50px;
+    transition: all 0.5s;
+    text-content: "идет загрузка"
+}
+
+.progress::before {
+    position: absolute;
+    content: ' загрузка...';
+    // top: 0;
+    left: 0;
+    width: 50%;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px
+}
+
+.figcaption .progress {
+    width: 40%;
+    height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    background: #e6eff86;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px #abb7e9
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    transition: all 1.5s;
+    opacity: 1;
+    background-color: black;
+    color: white
+}
+
+
+
+
+
+/*приколюхи*/
+
+
+.mission-message {
+    font-size: 24px;
+    color: black; /* Цвет текста */
+    margin-top: 10px; /* Отступ сверху */
+    display: none; /* Скрываем по умолчанию */
+    margin-left: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.mirror {
+    transform: scaleX(-1); /* Зеркальное отображение по оси X */
+    direction: rtl; /* Устанавливаем направление текста справа налево */
+}
+
+
+
+
+
+/*приколюхи*/
+
+/* Виджет телефона */
+.phone-widget {
+    position: fixed;
+    bottom: -50%;
+    right: 20px;
+    width: 250px;
+    height: 400px;
+    background-color: #333;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1000;
+    transition: bottom 0.3s ease;
+}
+
+.phone-widget:hover {
+    bottom: 20px; /* Появление телефона при наведении */
+}
+
+.phone-screen {
+    background-image: url("https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/5f050365878016f624bf34fe2865a4aa.jpeg?v=1739744130257");
+    height: 100%;
+    padding: 20px;
+    text-align: left;
+    overflow-y: auto;
+    position: relative;
+    border: solid 9px;
+    border-radius: 18px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.chat-box {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.chat-message {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.chat-message.bot {
+    background-color: #d3f1d3;
+}
+
+.chat-message.user {
+    background-color: #d3e6f1;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.chat-input input {
+    width: 70%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.chat-input button {
+    padding: 10px;
+    background-color: #ffffff17;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.chat-input button:hover {
+    background-color: #005a9e;
+}
+
+/* Конец Виджета телефона */
+
+
+
+
+
+
+
+
+
+
+.setup {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(0,0,0,.3);
+    border: 4px double black;
+    box-shadow: inset -1px -2px 12px 0 #000000ad;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in .5s;
+    background-image: url(data:image/svg+xml;base64,//48AD8AeABtAGwAIAB2AGUAcgBzAGkAbwBuAD0AIgAxAC4AMAAiACAAZQBuAGMAbwBkAGkAbgBnAD0AIgBVAFQARgAtADEANgAiAD8APgANAAoAPAAhAEQATwBDAFQAWQBQAEUAIABzAHYAZwAgAFAAVQBCAEwASQBDACAAIgAtAC8ALwBXADMAQwAvAC8ARABUAEQAIABTAFYARwAgADEALgAxAC8ALwBFAE4AIgAgACIAaAB0AHQAcAA6AC8ALwB3AHcAdwAuAHcAMwAuAG8AcgBnAC8ARwByAGEAcABoAGkAYwBzAC8AUwBWAEcALwAxAC4AMQAvAEQAVABEAC8AcwB2AGcAMQAxAC4AZAB0AGQAIgA+AA0ACgA8ACEALQAtACAAQwByAGUAYQB0AG8AcgA6ACAAQwBvAHIAZQBsAEQAUgBBAFcAIAAyADAAMQA5ACAAKAA2ADQALQBCAGkAdAApACAALQAtAD4ADQAKADwAcwB2AGcAIAB4AG0AbABuAHMAPQAiAGgAdAB0AHAAOgAvAC8AdwB3AHcALgB3ADMALgBvAHIAZwAvADIAMAAwADAALwBzAHYAZwAiACAAeABtAGwAOgBzAHAAYQBjAGUAPQAiAHAAcgBlAHMAZQByAHYAZQAiACAAdwBpAGQAdABoAD0AIgAzADAAcAB4ACIAIABoAGUAaQBnAGgAdAA9ACIAMwAwAHAAeAAiACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADEAIgAgAHMAdAB5AGwAZQA9ACIAcwBoAGEAcABlAC0AcgBlAG4AZABlAHIAaQBuAGcAOgBnAGUAbwBtAGUAdAByAGkAYwBQAHIAZQBjAGkAcwBpAG8AbgA7ACAAdABlAHgAdAAtAHIAZQBuAGQAZQByAGkAbgBnADoAZwBlAG8AbQBlAHQAcgBpAGMAUAByAGUAYwBpAHMAaQBvAG4AOwAgAGkAbQBhAGcAZQAtAHIAZQBuAGQAZQByAGkAbgBnADoAbwBwAHQAaQBtAGkAegBlAFEAdQBhAGwAaQB0AHkAOwAgAGYAaQBsAGwALQByAHUAbABlADoAZQB2AGUAbgBvAGQAZAA7ACAAYwBsAGkAcAAtAHIAdQBsAGUAOgBlAHYAZQBuAG8AZABkACIADQAKAHYAaQBlAHcAQgBvAHgAPQAiADAAIAAwACAAMwAwACAAMwAwACIADQAKACAAeABtAGwAbgBzADoAeABsAGkAbgBrAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAxADkAOQA5AC8AeABsAGkAbgBrACIADQAKACAAeABtAGwAbgBzADoAeABvAGQAbQA9ACIAaAB0AHQAcAA6AC8ALwB3AHcAdwAuAGMAbwByAGUAbAAuAGMAbwBtAC8AYwBvAHIAZQBsAGQAcgBhAHcALwBvAGQAbQAvADIAMAAwADMAIgA+AA0ACgAgADwAZABlAGYAcwA+AA0ACgAgACAAPABzAHQAeQBsAGUAIAB0AHkAcABlAD0AIgB0AGUAeAB0AC8AYwBzAHMAIgA+AA0ACgAgACAAIAA8ACEAWwBDAEQAQQBUAEEAWwANAAoAIAAgACAAIAAuAGYAaQBsADAAIAB7AGYAaQBsAGwAOgB3AGgAaQB0AGUAfQANAAoAIAAgACAAXQBdAD4ADQAKACAAIAA8AC8AcwB0AHkAbABlAD4ADQAKACAAPAAvAGQAZQBmAHMAPgANAAoAIAA8AGcAIABpAGQAPQAiACEEOwQ+BDkEXwB4ADAAMAAyADAAXwAxACIAPgANAAoAIAAgADwAbQBlAHQAYQBkAGEAdABhACAAaQBkAD0AIgBDAG8AcgBlAGwAQwBvAHIAcABJAEQAXwAwAEMAbwByAGUAbAAtAEwAYQB5AGUAcgAiAC8APgANAAoAIAAgADwAcABhAHQAaAAgAGMAbABhAHMAcwA9ACIAZgBpAGwAMAAiACAAZAA9ACIATQAxADcALgA5ADAAMwAgADIAMgAuADEANAA1AGMALQAwAC4ANQAyADUALAAtADAALgAwADIAMQAgAC0AMAAuADkAMgA3ACwALQAwAC4AMAA1ADgAIAAtADEALgAwADMAMgAsAC0AMAAuADEAMQA4ACAAMAAuADUAMgAxACwALQAwAC4AOQAwADEAIAAtADAALgA0ADcAOQAsAC0AMgAuADgAMwA0ACAALQAxAC4AMAAzADkALAAtADMALgAzADkANAAgAC0AMQAuADAAOQA3ACwALQAxAC4AMAA5ADcAIAAtADMALgAxADkAOAAsAC0AMQAuADAAOQA3ACAALQA0AC4AMgA5ADUALAAwACAALQAwAC4ANgA4ADEALAAwAC4ANgA4ADEAIAAtADAALgA5ADIANwAsADAALgA4ADcAOAAgAC0AMQAuADEANAAsADEALgA5ADMAOQAgAC0AMAAuADAAOAA3ACwAMAAuADQAMwA1ACAALQAwAC4AMQAyADkALAAxAC4AMAA1ADUAIAAwAC4AMQAwADEALAAxAC4ANAA1ADUAIAAtADAALgAzADcANgAsADAALgAyADEANwAgAC0ANAAuADMAMwAxACwAMAAuADEAMwAgAC0ANAAuADYANAAsADAALgAwADYAOQAgAC0AMAAuADIANwAxACwALQAxAC4AMwA2ADcAIAAwAC4AMwAxADkALAAtADUALgAzADYAIAAtADAALgAzADQANwAsAC0ANgAuADAAMgA2ACAALQAwAC4AMQA2ACwALQAwAC4AMQA2ACAALQAwAC4ANgAyADUALAAtADAALgAzADIAMQAgAC0AMAAuADgAMwAxACwALQAwAC4AMwAyACAALQAwAC4ANQAzADEALAAwAC4AMAAwADMAIAAtADEALgA0ADgAOQAsADAALgA5ADAAOAAgAC0AMgAuADYAMwAyACwALQAwAC4AMgAzADQAIAAtADEALgAyADYAOAAsAC0AMQAuADIANgA4ACAAMAAuADAAMQA4ACwALQAzAC4ANAA2ACAAMQAuADcAMwAyACwALQAzAC4AMAAxADIAIAAwAC4AMgAzADkALAAwAC4AMAA2ADIAIAAxAC4AMAA5ACwAMAAuADYAMAA1ACAAMQAuADcAMwAxACwALQAwAC4AMAAzADYAIAAwAC4ANgA2ADgALAAtADAALgA2ADYAOAAgADAALgAwADcAMwAsAC0ANAAuADYANAAxACAAMAAuADMANAA3ACwALQA2AC4AMAAyADYAIAAwAC4AMwAyADIALAAtADAALgAwADYANAAgADQALgAyADcAMgAsAC0AMAAuADEANAA0ACAANAAuADYANAAsADAALgAwADYAOQAgAC0AMAAuADQAMAAyACwAMAAuADYAOQA2ACAALQAwAC4AMAA0ACwAMgAuADMAMQA1ACAAMAAuADUANQA0ACwAMgAuADkAMAA5AGwAMAAuADQAOAA1ACAAMAAuADQAOAA1AGMAMQAuADAAOQA3ACwAMQAuADAAOQA3ACAAMwAuADEAOQA4ACwAMQAuADAAOQA3ACAANAAuADIAOQA1ACwAMAAgADAALgA3ADEANAAsAC0AMAAuADcAMQA0ACAAMQAuADIAOQAyACwALQAxAC4ANQAwADkAIAAxAC4AMgAwADkALAAtADIALgA2ADMAMgAgAC0AMAAuADAAMQA3ACwALQAwAC4AMgAzADgAIAAtADAALgAwADUAMwAsAC0AMAAuADUANQA5ACAALQAwAC4AMQA3ACwALQAwAC4ANwA2ADIAIAAwAC4AMQA1ADgALAAtADAALgAwADkAMQAgADAALgA5ADUAMwAsAC0AMAAuADEAMgA5ACAAMQAuADgANAAyACwALQAwAC4AMQAzADcAbAAwACAALQAxAC4ANAA5ACAALQAxAC4ANAA5ADYAIAAwAGMALQAwAC4ANQAwADkALAAtADAALgAwADAAMQAgAC0AMQAuADIANgA4ACwALQAwAC4AMAA4ADMAIAAtADEALgA3ADMAMgAsADAALgAzADgAMQAgAC0AMAAuADIAMQAyACwAMAAuADIAMQAyACAALQAwAC4AMwAyACwAMAAuADUAOQA0ACAALQAwAC4AMwAxADgALAAwAC4AOAAzADEAIAAwAC4AMAAwADMALAAwAC4ANAA3ADkAIAAwAC4AOQAxADkALAAxAC4ANAA3ADYAIAAtADAALgAyADMANgAsADIALgA2ADMAMgAgAC0AMQAuADIALAAxAC4AMQA5ADkAIAAtADMALgA0ADQAOAAsAC0AMAAuADAANAA3ACAALQAzAC4AMAA1ACwALQAxAC4ANgA2ADMAIAAwAC4AMAA3ADUALAAtADAALgAzADAAMgAgADAALgAyADYANAAsAC0AMAAuADUAMgA3ACAAMAAuADMAMQAsAC0AMAAuADgAMwAxACAAMAAuADIAMQAxACwALQAxAC4AMwA2ADkAIAAtADEALgAzADYANAAsAC0AMQAuADMANQAyACAALQAxAC4AOQA3ACwALQAxAC4AMwA1ACAALQAxAC4AMAAyACwAMAAuADAAMAAxACAALQA0AC4ANgAzADEALAAtADAALgAyADUAMgAgAC0ANQAuADIANgA0ACwAMAAuADMAOAAxACAALQAwAC4AOQAyADIALAAwAC4AOQAyADIAIAAtADAALgA2ADUAOAAsADEALgA2ADAANAAgAC0AMAAuADYANQA4ACwAMwAuADAANAA3ACAAMAAsADAALgA3ACAAMAAuADAAOAAsADIALgAxADkAIAAtADAALgAwADMANQAsADIALgA3ADcAMQAgAC0AMAAuADgANAAsAC0AMAAuADQAOAA3ACAALQAzAC4AMAAwADQALAAtADAALgAwADQAMwAgAC0AMwAuADkAMAAzACwAMQAuADcAMwAxACAALQAwAC4AMgAwADIALAAwAC4ANAAgAC0AMAAuADMANgAxACwAMQAuADAANwAgAC0AMAAuADMANgAxACwAMQAuADQANQA1ACAAMAAsADAALgAzADQANwAgADAALgAxADUALAAxAC4AMAAxADkAIAAwAC4AMwAyADYALAAxAC4AMwA4ADUAIAAwAC4ANgAxADMALAAxAC4AMgA2ADkAIAAxAC4AOQA2ADkALAAyAC4AMAA2ADEAIAAzAC4AMQA3ADcALAAxAC4AOQA3ADIAIAAwAC4AMgAzADgALAAtADAALgAwADEAOAAgADAALgA1ADUAOQAsAC0AMAAuADAANQA0ACAAMAAuADcANgAxACwALQAwAC4AMQA3ADEAIAAwAC4AMgA3ADgALAAxAC4ANAAwADIAIAAtADAALgAzADgALAA0AC4ANwA0ADUAIAAwAC4ANAAxADYALAA1AC4ANQA0ADEAIAAwAC4AOQA0ADYALAAwAC4AOQA0ADYAIAAyAC4AMQA1ADUALAAwAC4ANgA1ADgAIAAzAC4ANwA0ADEALAAwAC4ANgA1ADgAIAAxAC4ANgAsADAAIAAzAC4ANwA5ADMALAAwAC4AMwA2ADUAIAAzAC4ANwA4ADEALAAtADEALgAyADEAMgAgAC0AMAAuADAAMAAzACwALQAwAC4AMwA1ADkAIAAtADAALgAxADkAMwAsAC0AMAAuADUANAAyACAALQAwAC4AMwAsAC0AMAAuADkAIAAtADAALgA0ADkALAAtADEALgA2ADMAMgAgADEALgA4ADAANAAsAC0AMgAuADkANQA3ACAAMwAuADAAMgA5ACwALQAxAC4ANwAzADIAIAAwAC4ANAA3ADkALAAwAC4ANAA3ADkAIAAwAC4ANgA3ADMALAAxAC4AMQA4ADgAIAAwAC4ANQA1ADYALAAxAC4ANgA2ADMAIAAtADAALgAxADQANQAsADAALgA1ADkAIAAtADEALgAxADkAMwAsADIALgAxADgANgAgADEALgA2ADYAMQAsADIALgAxADgAMQAgADAALgAzADQANQAsADAAIAAwAC4AOQA4ADgALAAwAC4AMAAyADgAIAAxAC4ANwAxADIALAAwAC4AMAA0ADIAbAAtADAALgA5ADUANwAgAC0AMQAuADUANQAxAHoAbQA4AC4ANQAyADgAIAAtADYALgAwADkAOQBsADAALgA4ADgAMgAgADAAYwAwAC4ANwAxADcALAAwACAAMQAuADMANgA1ACwAMAAuADMAOAAxACAAMQAuADcAMQA1ACwAMQAuADAAMAA3ACAAMAAuADMANAA4ACwAMAAuADYAMgA2ACAAMAAuADMAMwAyACwAMQAuADMANwA4ACAALQAwAC4AMAA0ADQALAAxAC4AOQA4ADcAbAAtADQALgAyADQAOQAgADYALgA4ADkAMQBjAC0AMAAuADMANgAxACwAMAAuADUAOAA1ACAALQAwAC4AOQA4ADUALAAwAC4AOQAzADMAIAAtADEALgA2ADcAMgAsADAALgA5ADMAMwAgAC0AMAAuADYAOAA2ACwAMAAgAC0AMQAuADMAMQAxACwALQAwAC4AMwA0ADgAIAAtADEALgA2ADcAMQAsAC0AMAAuADkAMwAzAGwALQA0AC4AMgA1ACAALQA2AC4AOAA5ADEAYwAtADAALgAzADcANgAsAC0AMAAuADYAMAA5ACAALQAwAC4AMwA5ADIALAAtADEALgAzADYAMQAgAC0AMAAuADAANAAzACwALQAxAC4AOQA4ADcAIAAwAC4AMwA0ADkALAAtADAALgA2ADIANgAgADAALgA5ADkAOAAsAC0AMQAuADAAMAA3ACAAMQAuADcAMQA1ACwALQAxAC4AMAAwADcAbAAwAC4AOAA4ADEAIAAwACAAMAAgAC0AMQAyAC4AOAAwADQAYwAwACwALQAxAC4AMAA4ADMAIAAwAC4AOAA4ADEALAAtADEALgA5ADYAMwAgADEALgA5ADYAMwAsAC0AMQAuADkANgAzAGwAMgAuADgAMQAgADAAYwAxAC4AMAA4ADMALAAwACAAMQAuADkANgAzACwAMAAuADgAOAAgADEALgA5ADYAMwAsADEALgA5ADYAMwBsADAAIAAxADIALgA4ADAANAB6AG0ALQA1AC4AMwAxADgAIAAtADEAMgAuADgAMAA0AGwAMAAgADEAMwAuADYANwA3AGMAMAAsADAALgAzACAALQAwAC4AMgA0ADUALAAwAC4ANQA0ADUAIAAtADAALgA1ADQANQAsADAALgA1ADQANQBsAC0AMQAuADcANQA0ACAAMABjAC0AMAAuADIAMAAzACwAMAAgAC0AMAAuADMANwA4ACwAMAAuADEAMAAzACAALQAwAC4ANAA3ADcALAAwAC4AMgA4ACAALQAwAC4AMAA5ADkALAAwAC4AMQA3ADcAIAAtADAALgAwADkANAAsADAALgAzADcAOQAgADAALgAwADEAMgAsADAALgA1ADUAMgBsADQALgAyADUAIAA2AC4AOAA5ADEAYwAwAC4AMQAwADIALAAwAC4AMQA2ADUAIAAwAC4AMgA2ADkALAAwAC4AMgA1ADkAIAAwAC4ANAA2ADQALAAwAC4AMgA1ADkAIAAwAC4AMQA5ADUALAAwACAAMAAuADMANgAyACwALQAwAC4AMAA5ADQAIAAwAC4ANAA2ADQALAAtADAALgAyADUAOQBsADQALgAyADUAIAAtADYALgA4ADkAMQBjADAALgAxADAANgAsAC0AMAAuADEANwAzACAAMAAuADEAMQAxACwALQAwAC4AMwA3ADUAIAAwAC4AMAAxADIALAAtADAALgA1ADUAMgAgAC0AMAAuADAAOQA5ACwALQAwAC4AMQA3ADcAIAAtADAALgAyADcAMwAsAC0AMAAuADIAOAAgAC0AMAAuADQANwA2ACwALQAwAC4AMgA4AGwALQAxAC4ANwA1ADQAIAAwAGMALQAwAC4AMwAsADAAIAAtADAALgA1ADQANgAsAC0AMAAuADIANAA1ACAALQAwAC4ANQA0ADYALAAtADAALgA1ADQANQBsADAAIAAtADEAMwAuADYANwA3AGMAMAAsAC0AMAAuADMAIAAtADAALgAyADQANQAsAC0AMAAuADUANAA1ACAALQAwAC4ANQA0ADUALAAtADAALgA1ADQANQBsAC0AMgAuADgAMQAgADAAYwAtADAALgAzACwAMAAgAC0AMAAuADUANAA1ACwAMAAuADIANAA1ACAALQAwAC4ANQA0ADUALAAwAC4ANQA0ADUAegBtAC0ANAAuADgAOQAxACAAMgAxAC4AOAA4ADgAbAAwAC4AMgAwADYAIAAwAGMAMAAuADIAOAAyACwAMAAgADAALgA1ADEAMgAsADAALgAyADMAIAAwAC4ANQAxADIALAAwAC4ANQAxADMAbAAwACAAMQAuADQANQA1AGMAMAAsADAALgAyADgAMgAgADAALgAyADMAMQAsADAALgA1ADEAMwAgADAALgA1ADEANAAsADAALgA1ADEAMwBsADEAMAAuADgAMAAyACAAMABjADAALgAyADgAMgAsADAAIAAwAC4ANQAxADMALAAtADAALgAyADMAMQAgADAALgA1ADEAMwAsAC0AMAAuADUAMQAzAGwAMAAgAC0AMQAuADQANQA1AGMAMAAsAC0AMAAuADIAOAAzACAAMAAuADIAMwAsAC0AMAAuADUAMQAzACAAMAAuADUAMQAzACwALQAwAC4ANQAxADMAbAAwAC4AMgAwADUAIAAwAGMAMAAuADIAOAAyACwAMAAgADAALgA1ADEAMwAsADAALgAyADMAIAAwAC4ANQAxADMALAAwAC4ANQAxADMAbAAwACAAMgAuADUANgA1AGMAMAAsADAALgAyADgAMwAgAC0AMAAuADIAMwAxACwAMAAuADUAMQAzACAALQAwAC4ANQAxADMALAAwAC4ANQAxADMAbAAtADEAMwAuADIANgA1ACAAMABjAC0AMAAuADIAOAAyACwAMAAgAC0AMAAuADUAMQAzACwALQAwAC4AMgAzACAALQAwAC4ANQAxADMALAAtADAALgA1ADEAMwBsADAAIAAtADIALgA1ADYANQBjADAALAAtADAALgAyADgAMwAgADAALgAyADMAMQAsAC0AMAAuADUAMQAzACAAMAAuADUAMQAzACwALQAwAC4ANQAxADMAegAiAC8APgANAAoAIAA8AC8AZwA+AA0ACgA8AC8AcwB2AGcAPgANAAoA)
+}
+
+.setup__title {
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+    position: absolute;
+    padding: 10px;
+    left: 50%;
+    top: 52px;
+    font-size: 12px;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,.5);
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    color: white;
+    animation-name: softHidden;
+    animation-timing-function: cubic-bezier(.075,.82,.165,1);
+    animation-duration: .5s
+}
+
+.setup__title--hidden {
+    opacity: 0;
+    animation-name: softHidden;
+    animation-timing-function: cubic-bezier(.075,.82,.165,1);
+    animation-duration: .5s
+}
+
+@keyframes softHidden {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: .5
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.setup svg {
+    fill: white
+}
+
+.preloader-remove {
+    opacity: 0;
+    z-index: -10
+}
+
+.figure {
+    display: table;
+    margin: -50 auto
+}
+
+.figcaption {
+    display: inline-block;
+    overflow: hidden;
+    align-items: center;
+    max-width: 100%;
+    text-align: center;
+    font-family: "https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/acdisplay_bold.otf?v=1726073750181"
+}
+
+.selector {
+    position: absolute;
+    display: left;
+    justify-content: center;
+    align-items: left;
+    text-align: center;
+    padding-top: 0;
+    padding: 0em;
+    padding-bottom: 0;
+    margin-top: 10px;
+    margin-left: 3px;
+    height: 53.72px;
+    width: 103px;
+    border: solid;
+    border-color: white;
+    border-radius: 11px;
+    background-color: black;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background: #000000a6;
+    text-opacity: .2;
+    z-index: 1
+}
+
+.select select {
+    background-color: red;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #444
+}
+
+.selector:hover {
+    border-color: red;
+    background-color: black
+}
+
+.NightTheme {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/bgnight.webp?v=1725093068186')
+}
+
+.LightTheme {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/bg.webp?v=1724674355389')
+}
+
+.kover {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/i.jpg?v=1728651264092')
+}
+.gow {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/crutos.webp?v=1740645690803')
+}
+.biemwe{
+  background-image: url("https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/160564.webp?v=1740645146241")
+}
+.bobgubka{
+  background-image: url("https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/maxresdefault.webp?v=1740645463144")
+}
+
+.video {
+    background-image: url('https://cdn.glitch.me/1584c047-6111-4e8b-98d1-b725da2fb99f/PURPLEEEEEEEezgif-6-bd8127a569.gif?v=1728748973545')
+}
+
+.samuray {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/7037d478852af21357f038fac2d2e9f6%20(1).gif?v=1739279894568')
+}
+
+.vicecity {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/178044-grand_theft_auto-gta_vajs_siti-gta_vi-grand_theft_auto_v-vice_siti-1920x1080%20(1).webp?v=1728684220380')
+}
+
+.asphalt {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/177446-poster-zhivopis-sklon-pryamougolnik-asfalt-1920x1080.webp?v=1728684577635')
+}
+
+.darkpink {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/524680.jpg?v=1738344989356')
+}
+
+.spokoistvo {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/178302-lazurnyj-sklon-elektrik-gorizont-uzor-1920x1080.webp?v=1728683422757')
+}
+
+.babacatana {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/babakatana.webp?v=1728683124277')
+}
+
+.carm {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/a5049b9b189e0da8d89f733d5ccbc5fc.webp?v=1725128208976')
+}
+
+.greenles {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/ec1421d783c654da6fe9513b322f8294%20(1).webp?v=1725126565227')
+}
+
+.zakat {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/c9c0de661b647d02d6ae90420ac79e2a.webp?v=1725106845932')
+}
+
+.cubes {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/f1634d00-1f6b-11ea-8e68-6b2aaa6490e1.gif?v=1725108341296')
+}
+
+.darkside {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/1544367264_Arecibo_GIF_2880x1620%20(1).gif?v=1725110327125')
+}
+
+.volna {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/c98a630219cfe688adbf3ca148012e36.gif?v=1725110597096')
+}
+
+.mrak {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/4txh.gif?v=1725687976360')
+}
+
+.redcat {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/1708955523511.webp?v=1725112444238')
+}
+
+.kakasi {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/thumb-1920-1357271.webp?v=1725689632084')
+}
+
+.cpasebottle {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/168273.webp?v=1725687049568')
+}
+
+.goduck {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/1481391291_254c3ab0cbf821a1.gif?v=1725145876254')
+}
+
+.moremount {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/1496766777_image_860406161451044326270.gif?v=1725688390916')
+}
+
+.eskalator {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/e5d0d0a0cd62505547b1862632c05a7b.gif?v=1725689059547')
+}
+
+.womantwo {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/%D0%B2%D1%83%D0%BC%D0%B5%D0%BD.webp?v=1728648471107')
+}
+
+.taycan {
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/maxresdefault.jpg?v=1725690090870')
+}
+
+@font-face {
+    font-family: 'https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/OpenSans.ttf?v=1726073400695';
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2) format('woff2');
+    unicode-range: U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F
+}
+
+@font-face {
+    font-family: 'https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/OpenSans.ttf?v=1726073400695';
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2) format('woff2');
+    unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2) format('woff2');
+    unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2) format('woff2');
+    unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+}
+
+@font-face {
+    font-family: 'Mercury';
+    src: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/Mercury-AltBold.woff2?v=1724678453480') format('woff2'),url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/Mercury-AltBold.woff?v=1724678435423') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    height: 100%;
+    background-image: url(https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/bg.webp?v=1724674355389);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0
+}
+
+header {
+    margin: 0;
+    background-color: transparent
+}
+
+main {
+    width: 100%
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.logo {
+    font-family: 'Mercury';
+    display: flex;
+    font-size: 15px
+}
+
+.logo span {
+    margin-top: 70px;
+    font-size: 4em;
+    font-weight: 700;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black
+}
+
+.blue {
+    color: #605ef2
+}
+
+.red {
+    color: #f25e61
+}
+
+.white {
+    color: #f7f0f0
+}
+
+.pink {
+    color: #f57abc
+}
+
+input::placeholder {
+    color: #757575;
+    font-family: 'https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/OpenSans.ttf?v=1726073400695'
+}
+
+.search_form {
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 1fr 20px;
+    padding-right: 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    overflow: hidden;
+    opacity: .84
+}
+
+.search {
+    height: 60px;
+    width: 100%;
+    padding-left: 20px;
+    border: none;
+    border-left: 25px;
+    outline: none;
+    font-family: 'https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/acdisplay_bold.otf?v=1726073750181';
+    font-size: 18px
+}
+
+.search_btn {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent
+}
+
+.middle {
+    margin-top: 30%
+}
+
+.button {
+    height: 40px;
+    width: 130px;
+    margin-bottom: 3%;
+    font-size: 100%;
+    color: white;
+    font-family: 'Muli',sans-serif;
+    border-radius: 10px;
+    border-color: #fff
+}
+
+.button:hover {
+    background-color: var(--prymari-violet);
+    font-family: 'Muli',sans-serif
+}
+
+.express-panel-btn {
+    border: none;
+    min-width: max-content;
+    cursor: pointer
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: centercursor:pointer;
+    center;padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 19px;
+    font-weight: 700;
+    color: #fafaff
+}
+
+.footer a {
+    text-decoration: none;
+    padding: 5px
+}
+
+.dm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.65);
+    overflow: auto;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1000
+}
+
+.dm-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%
+}
+
+.dm-modal {
+    position: relative;
+    padding: 60px;
+    width: 90%;
+    height: auto;
+    background-image: url("https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/1323881.webp?v=1728490890502");
+    color: #cfd8dc;
+    box-shadow: 0 0 20px 5px #45ea9f,0 19px 60px rgba(0,0,0,.3);
+    border: 3px solid white;
+    border-radius: 25px
+}
+
+.dm-modal_title {
+    margin-bottom: 25px;
+    font-family: 'https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/acdisplay_bold.otf?v=1726073750181';
+    text-transform: capitalize
+}
+
+.close {
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    transition: transform ease-in-out .3s
+}
+
+.close:hover {
+    transform: rotateZ(180deg);
+    transition: transform ease-in-out .3s
+}
+
+.close span {
+    display: flex;
+    width: 30px;
+    height: 30px
+}
+
+.btn {
+    position: fixed; /* Фиксируем кнопку */
+    bottom: 5px; /* Отступ от низа экрана */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Сдвигаем на половину ширины кнопки для центрирования */
+    z-index: 1000; /* Убедитесь, что кнопка находится поверх других элементов */
+    height: 50px; /* Высота кнопки */
+    width: 220px; /* Ширина кнопки */
+    margin-bottom: 5px; /* Отступ снизу (можно убрать, если не нужен) */
+    font-size: 100%; /* Размер шрифта */
+    color: white; /* Цвет текста */
+    font-family: 'Muli', sans-serif; /* Шрифт */
+    border:solid white; /* Тип и Цвет границы */
+    border-radius: 10px; /* Скругление углов */
+    background-color: #00000085; /* Цвет фона */
+}
+
+.btn:hover {
+    background-color: #0000006e
+}
+
+.btn-group {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.btn svg {
+    z-index: 1
+}
+
+.button-link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 3px 10px 2px #1e1e1e;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: #1c1c1c;
+    color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+    height: 110px
+}
+
+.button-link_text {
+    font-size: 10px;
+    font-family: "https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/acdisplay_bold.otf?v=1726073750181"
+}
+
+.button-link:hover {
+    background-color: var(--mobile--hover-green)
+}
+
+.button-link:hover .button-link_text {
+    color: var(--mobile--hover-green)
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: transparent
+}
+
+.icon svg {
+    stroke: white
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+@media(min-width: 524px) {
+    .btn-group {
+        justify-content:space-evenly
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        padding-left:20px;
+        padding-right: 20px
+    }
+
+    .dm-modal {
+        width: 80%
+    }
+
+    .btn-group {
+        grid-template-columns: 200px 200px
+    }
+
+    .button-link {
+        flex-direction: row;
+        justify-content: center;
+        background-image: linear-gradient(90deg,black,#181818)
+    }
+
+    .button-link:hover,.button-link:focus {
+        background-image: linear-gradient(90deg,black 50%,gray)
+    }
+
+    .button-link_text {
+        font-size: 1em
+    }
+
+    .logo span {
+        font-size: 7em
+    }
+}
+
+@media(min-width: 1024px) {
+    .container {
+        margin:auto;
+        width: 920px
+    }
+
+    .logo span {
+        font-size: 10em
+    }
+
+    .dm-modal {
+        width: 60%
+    }
+
+    .btn-group {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .button-link_text {
+        font-size: 1.5em
+    }
+}
+
+@charset "UTF-8";.nav {
+    width: 320px;
+    min-width: 320px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    right: -320px;
+    padding: 15px 20px;
+    -webkit-transition: right 0.3s;
+    -moz-transition: right 0.3s;
+    transition: right 0.3s;
+    background: #000000cc;
+    z-index: 1000;
+    border-radius: 15px
+}
+
+.nav-toggle {
+    position: absolute;
+    right: 320px;
+    top: 10px;
+    padding: .8em;
+    background: #000000a6;
+    border: solid;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    line-height: 1;
+    z-index: 2001;
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+    width: 95px;
+    text-align: center
+}
+
+.nav-toggle:after {
+    content: '\2630';
+    text-decoration: none
+}
+
+.nav-toggle:hover {
+    color: red
+}
+
+[id='nav-toggle'] {
+    position: absolute;
+    display: none
+}
+
+[id='nav-toggle']:checked~.nav>.nav-toggle {
+    left: auto;
+    right: 2px;
+    top: 1em
+}
+
+[id='nav-toggle']:checked~.nav {
+    right: 0;
+    box-shadow: -4px 0 20px 0 rgba(0,0,0,.5);
+    -moz-box-shadow: -4px 0 20px 0 rgba(0,0,0,.5);
+    -webkit-box-shadow: -4px 0 20px 0 rgba(0,0,0,.5);
+    overflow-y: auto
+}
+
+[id='nav-toggle']:checked~main>article {
+    -webkit-transform: translateX(-320px);
+    -moz-transform: translateX(-320px);
+    transform: translateX(-320px)
+}
+
+[id='nav-toggle']:checked~.nav>.nav-toggle:after {
+    content: '\2715'
+}
+
+body {
+    -webkit-animation: bugfix infinite 1s
+}
+
+@-webkit-keyframes bugfix {
+    to {
+        padding: 0
+    }
+}
+
+@media screen and (min-width: 320px) {
+    html,body {
+        margin:0;
+        overflow-x: hidden
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html,body {
+        margin:0;
+        overflow-x: hidden
+    }
+
+    .nav {
+        width: 100%;
+        box-shadow: none
+    }
+}
+
+.nav h2 {
+    width: 90%;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+    text-shadow: rgba(255,255,255,.1) -1px -1px 1px,rgba(0,0,0,.5) 1px 1px 1px;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    opacity: 0;
+    transform: scale(.1,.1);
+    -ms-transform: scale(.1,.1);
+    -moz-transform: scale(.1,.1);
+    -webkit-transform: scale(.1,.1);
+    transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    transition: opacity 0.8s,transform 0.8s;
+    -ms-transition: opacity 0.8s,-ms-transform 0.8s;
+    -moz-transition: opacity 0.8s,-moz-transform 0.8s;
+    -webkit-transition: opacity 0.8s,-webkit-transform 0.8s
+}
+
+.nav h2 a {
+    color: #dadada;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+[id='nav-toggle']:checked~.nav h2 {
+    opacity: 1;
+    transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1)
+}
+
+.nav>ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.nav>ul>li {
+    line-height: 2.5;
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    -webkit-transition: opacity .5s .1s,-webkit-transform .5s .1s;
+    -moz-transition: opacity .5s .1s,-moz-transform .5s .1s;
+    -ms-transition: opacity .5s .1s,-ms-transform .5s .1s;
+    transition: opacity .5s .1s,transform .5s .1s
+}
+
+[id='nav-toggle']:checked~.nav>ul>li {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.nav>ul>li:nth-child(2) {
+    -webkit-transition: opacity .5s .2s,-webkit-transform .5s .2s;
+    transition: opacity .5s .2s,transform .5s .2s
+}
+
+.nav>ul>li:nth-child(3) {
+    -webkit-transition: opacity .5s .3s,-webkit-transform .5s .3s;
+    transition: opacity .5s .3s,transform .5s .3s
+}
+
+.nav>ul>li:nth-child(4) {
+    -webkit-transition: opacity .5s .4s,-webkit-transform .5s .4s;
+    transition: opacity .5s .4s,transform .5s .4s
+}
+
+.nav>ul>li:nth-child(5) {
+    -webkit-transition: opacity .5s .5s,-webkit-transform .5s .5s;
+    transition: opacity .5s .5s,transform .5s .5s
+}
+
+.nav>ul>li:nth-child(6) {
+    -webkit-transition: opacity .5s .6s,-webkit-transform .5s .6s;
+    transition: opacity .5s .6s,transform .5s .6s
+}
+
+.nav>ul>li:nth-child(7) {
+    -webkit-transition: opacity .5s .7s,-webkit-transform .5s .7s;
+    transition: opacity .5s .7s,transform .5s .7s
+}
+
+.nav>ul>li>a {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    -webkit-transition: color .5s ease,padding .5s ease;
+    -moz-transition: color .5s ease,padding .5s ease;
+    transition: color .5s ease,padding .5s ease
+}
+
+.nav>ul>li>a:hover,.nav>ul>li>a:focus {
+    color: white;
+    padding-left: 15px
+}
+
+.nav>ul>li>a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease
+}
+
+.nav>ul>li>a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: #ff6161;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease
+}
+
+.nav>ul>li>a:hover:before {
+    width: 0%;
+    background: #f9a9a9;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease
+}
+
+.nav>ul>li>a:hover:after {
+    width: 0%;
+    background: transparent;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease
+}
+
+.service {
+    color: white;
+    padding-left: 0px;
+    padding-top: 20px;
+}
+
+.figure {
+    width: 512px;
+    height: 512px
+}
+
+.slova {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000008a;
+    color: white;
+    padding: 20px;
+    max-width: 550px;
+    margin-top: 25px;
+    margin: 0 auto
+}
+
+.dm-modal {
+    animation-duration: 0.55s;
+    animation-fill-mode: both;
+    animation-name: fadeInUpBig
+}
+
+@keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,2000px,0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+.мое любой класс который хочу инимировать {
+    animation-duration: 0.55s;
+    animation-fill-mode: both;
+    animation-name: fadeInUpBig
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale3d(1,1,1)
+    }
+
+    50% {
+        transform: scale3d(1.05,1.05,1.05)
+    }
+
+    100% {
+        transform: scale3d(1,1,1)
+    }
+}
+
+@keyframes bounceInDown {
+    0%,60%,75%,90%,100% {
+        animation-timing-function: cubic-bezier(.215,.61,.355,1)
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(0,-3000px,0)
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(0,25px,0)
+    }
+
+    75% {
+        transform: translate3d(0,-10px,0)
+    }
+
+    90% {
+        transform: translate3d(0,5px,0)
+    }
+
+    100% {
+        transform: none
+    }
+}
+
+@keyframes bounceInLeft {
+    0%,60%,75%,90%,100% {
+        animation-timing-function: cubic-bezier(.215,.61,.355,1)
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px,0,0)
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(25px,0,0)
+    }
+
+    75% {
+        transform: translate3d(-10px,0,0)
+    }
+
+    90% {
+        transform: translate3d(5px,0,0)
+    }
+
+    100% {
+        transform: none
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,-100%,0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@keyframes fadeInDownBig {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,-2000px,0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%,0,0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@keyframes fadeInLeftBig {
+    0% {
+        opacity: 0;
+        transform: translate3d(-2000px,0,0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,2000px,0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@keyframes rotateInDownLeft {
+    0% {
+        opacity: 0;
+        transform: rotate3d(0,0,1,-45deg);
+        transform-origin: left bottom 0
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+        transform-origin: left bottom 0
+    }
+}
+
+@keyframes rollIn {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)
+    }
+
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale3d(.3,.3,.3)
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translate3d(0,-100%,0);
+        visibility: visible
+    }
+
+    100% {
+        transform: translate3d(0,0,0)
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translate3d(-100%,0,0);
+        visibility: visible
+    }
+
+    100% {
+        transform: translate3d(0,0,0)
+    }
+}
+
+#openButton {
+position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #0000009c;
+    color: white;
+    border: solid;
+    border-radius: 0px 40px 40px 0px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 249 /* Убедимся, что кнопка отображается поверх всех элементов */;
+}
+
+#openButton:hover{
+  color:yellow;
+  background:black;
+  border-color:red;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s;
+    z-index: 1001;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+#content {
+background: #000000;
+    box-shadow: #318dff 0 0 20px 8px;
+    border-radius: 25px;
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #00000080;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border: solid;
+    border-radius: 15px;
+}
+
+#closeButton:hover{
+      border-color: black;
+    background-color: yellow;
+}
+
+.objj{
+  border-radius:25px;
+}

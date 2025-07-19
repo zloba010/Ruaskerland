@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Камень-Ножницы-Бумага</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .choices {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        
+        .choice {
+            cursor: pointer;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+        
+        .choice:hover {
+            background: #f1f1f1;
+        }
+        
+        .result {
+            margin: 20px 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+        
+        .score {
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Камень-Ножницы-Бумага</h1>
+        <div class="choices">
+            <div class="choice" data-choice="1">Камень</div>
+            <div class="choice" data-choice="2">Ножницы</div>
+            <div class="choice" data-choice="3">Бумага</div>
+        </div>
+        <div class="result"></div>
+        <div class="score">Ваш счет: 0 | Компьютер: 0</div>
+    </div>
+
+    <script>
+        const choices = document.querySelectorAll('.choice');
+        const resultDisplay = document.querySelector('.result');
+        const scoreDisplay = document.querySelector('.score');
+        let userScore = 0;
+        let computerScore = 0;
+        
+        choices.forEach(choice => {
+            choice.addEventListener('click', () => {
+                const userChoice = choice.dataset.choice;
+                const computerChoice = getComputerChoice();
+                const result = getResult(userChoice, computerChoice);
+                
+                updateResultDisplay(result);
+                updateScore(result);
+                updateScoreDisplay();
+            });
+        });
+
+        function getComputerChoice() {
+            return Math.floor(Math.random() * 3) + 1;
+        }
+
+        function getResult(userChoice, computerChoice) {
+            if (userChoice === computerChoice) {
+                return 'Ничья';
+            }
+            
+            if ((userChoice === 1 && computerChoice === 2) ||
+                (userChoice === 2 && computerChoice === 3) ||
+                (userChoice === 3 && computerChoice === 1)) {
+                return 'Вы выиграли!';
+            }
+            
+            return 'Вы проиграли';
+        }
+
+        function updateResultDisplay(result) {
+            resultDisplay.textContent = result;
+        }
+
+        function updateScore(result) {
+            if (result === 'Вы выиграли!') {
+                userScore++;
+            } else if (result === 'Вы проиграли') {
+                computerScore++;
+            }
+        }
+
+        function updateScoreDisplay() {
+            scoreDisplay.textContent = `Ваш счет: ${userScore} | Компьютер: ${computerScore}`;
+        }
+    </script>
+</body>
+</html>

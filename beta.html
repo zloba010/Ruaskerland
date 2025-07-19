@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Голосовой чат-бот с самообучением</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f1f1f1;
+        }
+        #chat {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 400px;
+            overflow-y: scroll;
+        }
+        #inputField {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .userMessage {
+            text-align: right;
+            margin: 10px 0;
+            color: #007bff;
+        }
+        .botMessage {
+            text-align: left;
+            margin: 10px 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="chat"></div>
+    <input type="text" id="inputField" placeholder="Напишите ваше сообщение..." onkeypress="handleKeyPress(event)">
+
+    <script>
+        const chat = document.getElementById("chat");
+        const inputField = document.getElementById("inputField");
+
+        // Загружаем данные, если они есть в LocalStorage
+        let botMemory = JSON.parse(localStorage.getItem("botMemory")) || {};
+
+        // Функция для отображения сообщений
+        function displayMessage(message, sender) {
+            const messageElement = document.createElement("div");
+            messageElement.className = sender === "user" ? "userMessage" : "botMessage";
+            messageElement.innerText = message;
+            chat.appendChild(messageElement);
+            chat.scrollTop = chat.scrollHeight; // Прокручиваем чат вниз
+        }
+
+        // Функция для обработки ввода пользователя
+        function handleKeyPress(event) {
+            if (event.key === "Enter" && inputField.value.trim() !== "") {
+                const userMessage = inputField.value.trim();
+                inputField.value = "";
+
+                displayMessage(userMessage, "user");
+
+                // Проверяем, есть ли ответ в памяти бота
+                if (botMemory[userMessage.toLowerCase()]) {
+                    displayMessage(botMemory[userMessage.toLowerCase()], "bot");
+                } else {
+                    askForNewResponse(userMessage);
+                }
+            }
+        }
+
+        // Запросить новый ответ у пользователя, если бот не знает, что ответить
+        function askForNewResponse(userMessage) {
+            const botResponse = prompt("Я не знаю, как ответить на это. Как мне ответить?");
+
+            if (botResponse) {
+                // Запоминаем фразу и ответ в памяти
+                botMemory[userMessage.toLowerCase()] = botResponse;
+
+                // Сохраняем обновленную память в LocalStorage
+                localStorage.setItem("botMemory", JSON.stringify(botMemory));
+
+                displayMessage("Спасибо за помощь! Я запомнил ответ.", "bot");
+            } else {
+                displayMessage("Я не получил ответ, но попробую запомнить это в следующий раз.", "bot");
+            }
+        }
+    </script>
+
+</body>
+</html>

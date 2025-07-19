@@ -1,0 +1,6 @@
+User-agent: *
+Crawl-delay: 1
+Host: https://ruaskerland.glitch.me/
+Disallow: /beta.html
+Disallow: /small.html
+Disallow: /osnovaosnov.html

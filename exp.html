@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспресс-панель</title>
+    <style>
+      html {
+        border: 5px;
+        border-radius: 25px;
+        box-shadow: 1px 8px 6px 5px #000000ac;
+        cursor: url("https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/cursor.png?v=1728243952305"), auto;
+               font-family: 'Mercury';
+       src: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/Mercury-AltBold.woff2?v=1724678453480') format('woff2'),url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/Mercury-AltBold.woff?v=1724678435423') format('woff');
+
+        font-family: 'Mercury';
+      }
+
+      body {
+            font-family: Arial, sans-serif;
+    background-image: url('https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/stormy-clouds-1.jpg?v=1739299019813');
+    background-repeat: repeat;
+    background-size: auto;
+          color: white;0
+        }
+        #toolbar {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            border: solid 6px;
+            border-radius: 15px;
+            border-color: black;
+        }
+        #tabs {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 60px;
+            grid-gap: 25px 30px;
+          
+        }
+        .tab {
+            width: 155px;
+            height: 105px;
+            margin: 5px;
+            text-align: center;
+            cursor: pointer; 
+            border-radius: 25px;
+            border: 5px;
+            border-color: #f000;
+            font-size: 15px;
+            color:black;
+          box-shadow: 0px 9px 6px 5px #000000ad;
+          
+        }
+        .tab img {
+            width: 75px;
+            height: 65px;
+            margin-top: 5px;
+          border-radius: 5px;
+        }
+.editor {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background: white;
+    border: 2px solid black;
+    padding: 15px;
+    z-index: 1000;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 50px;
+}
+      button#gotovo{
+        border-radius:25px;
+        border:solid black;
+        color:white;
+        background:green;
+      }     
+      button#gotovo:hover{
+        background:yellow;
+        color:black;
+      }
+      
+      #toolbar{
+        margin-top: 55px;
+      }
+                  #tabTitle{
+        margin-left:20%;
+      }
+      #tabColor{
+        margin-left:20%;
+      }
+            #tabIcon{
+        margin-left:20%;
+      }
+            #tabLink{
+        margin-left:20%;
+      }
+    </style>
+</head>
+<body>
+      <div id="context-menu" class="context-menu">
+        <div class="context-menu__item" onclick="refreshPage()">
+            <span>🔄 Обновить</span>
+        </div>
+        <div class="context-menu__item" onclick="pasteFromClipboard()">
+            <span>📋 Вставить</span>
+        </div>
+        <div class="context-menu__item" onclick="openSearchCommands()">
+            <span>💡 Команды для Поиска</span>
+        </div>
+        <div class="context-menu__item" onclick="openWhatsNew()">
+            <span>✨ Что нового?</span>
+        </div>
+    </div><style>.context-menu {
+    display: none;
+    position: fixed;
+    background: #000000de;
+    border: 3px solid yellow;
+    border-radius: 6px 25px 25px 25px;
+    box-shadow: 0px -1px 20px 6px rgb(235 255 85);
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 5px 0;
+    z-index: 9999;
+  overflow:hidden;
+  color:white;
+}
+
+.context-menu__item {
+    padding: 5px 15px;
+    cursor: default;
+    user-select: none;
+  border-radiys: 25px;
+}
+
+.context-menu__item:hover {
+    background: yellow;
+  color:black;
+    border-radiys: 25px;
+}
+
+.context-menu__item:active {
+    background: #e0e0e0;
+  border-radiys: 25px;
+}
+
+.context-menu__item:focus {
+    outline: none;
+    background: #f0f0f0;
+  border-radiys: 25px;
+}</style>
+<script>const contextMenu = document.getElementById('context-menu');
+
+document.addEventListener('contextmenu', e => {
+    e.preventDefault();
+    contextMenu.style.display = 'block';
+    contextMenu.style.left = `${e.clientX}px`;
+    contextMenu.style.top = `${e.clientY}px`;
+});
+
+document.addEventListener('click', () => {
+    contextMenu.style.display = 'none';
+});
+
+function refreshPage() {
+    window.location.reload();
+}
+
+async function pasteFromClipboard() {
+    try {
+        const text = await navigator.clipboard.readText();
+        document.execCommand('insertText', false, text);
+    } catch (err) {
+        console.error('Не удалось вставить из буфера обмена:', err);
+    }
+}
+
+function openSearchCommands() {
+    window.open('https://ruaskerland.glitch.me/comandlist.html', '_blank', 'noopener,noreferrer');
+}
+
+function openWhatsNew() {
+    window.open('https://ruaskerland.glitch.me/list-of-changes.txt', '_blank', 'noopener,noreferrer');
+}</script>
+  <h1>Экспресс-Панель</h1>
+
+<div id="toolbar">
+    <button onclick="toggleEditor()">✏️</button>
+</div>
+
+<div class="editor" id="editor">
+    <h2>Редактирование закладок</h2>
+    <h5>(Учтите, после того как вкладка будет создана и добавлена - она редактированию уже не подлежит. В случае необходимости создайте новую.)</h5>
+  
+    <input type="text" id="tabTitle" placeholder="Введите Название заладки"> - Введите Название заладки<br>
+  <br>
+    <input type="color" id="tabColor"> - укажите цвет закладки<br>
+  <br>
+      <input type="file" id="tabIcon" accept="image/*"> - выберите свою иконку для закладки<br> 
+  <br>
+       <input type="url" id="tabLink" placeholder="https://epmty.site/"> - укажите ссылку на сайи или страницу<br>
+  <br>
+  <br>
+    <button id="gotovo" onclick="addTab()">Готово</button>
+  
+</div>
+
+<div id="tabs"></div>
+
+<script>
+    let tabs = JSON.parse(localStorage.getItem('tabs')) || [];
+
+    function toggleEditor() {
+        const editor = document.getElementById('editor');
+        editor.style.display = editor.style.display === 'none' || editor.style.display === '' ? 'block' : 'none';
+    }
+
+    function addTab() {
+        const title = document.getElementById('tabTitle').value;
+        const color = document.getElementById('tabColor').value;
+        const link = document.getElementById('tabLink').value;
+        const icon = document.getElementById('tabIcon').files[0];
+
+        if (title && link) {
+            const reader = new FileReader();
+            reader.onload = function (event) {
+                const tab = { title, color, link, icon: event.target.result };
+                tabs.push(tab);
+                localStorage.setItem('tabs', JSON.stringify(tabs));
+                renderTabs();
+            };
+            if (icon) {
+                reader.readAsDataURL(icon);
+            } else {
+                // Если иконка не загружена, добавляем вкладку без иконки
+                const tab = { title, color, link, icon: '' };
+                tabs.push(tab);
+                localStorage.setItem('tabs', JSON.stringify(tabs));
+                renderTabs();
+            }
+        }
+        clearEditor();
+    }
+
+    function clearEditor() {
+        document.getElementById('tabTitle').value = '';
+        document.getElementById('tabColor').value = '#ffffff';
+        document.getElementById('tabIcon').value = '';
+        document.getElementById('tabLink').value = '';
+    }
+
+    function renderTabs() {
+        const tabsContainer = document.getElementById('tabs');
+        tabsContainer.innerHTML = '';
+        tabs.forEach((tab, index) => {
+            const tabElement = document.createElement('div');
+            tabElement.className = 'tab';
+            tabElement.style.backgroundColor = tab.color;
+            tabElement.onclick = () => window.open(tab.link, '_parent');
+            tabElement.innerHTML = `
+                <img src="${tab.icon}" alt="Иконка" style="${tab.icon ? '' : 'display: none;'}">
+                <div>${tab.title}</div>
+                <button onclick="deleteTab(${index}); event.stopPropagation();">❌</button>
+            `;
+            tabsContainer.appendChild(tabElement);
+        });
+    }
+
+    function deleteTab(index) {
+        tabs.splice(index, 1);
+        localStorage.setItem('tabs', JSON.stringify(tabs));
+        renderTabs();
+    }
+
+    window.onload = renderTabs;
+</script>
+
+</body>
+</html>

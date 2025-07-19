@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Секретная Игра-Кликер</title>
+  <style>
+  .easter-egg-character {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    transition: opacity 0.5s;
+}
+
+.easter-egg-character.active {
+    display: block;
+    opacity: 1;
+}
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+.easter-egg-character.active {
+    animation: slideIn 0.5s ease-out forwards;
+}
+  </style>
+</head>
+<body>
+   <div class="easter-egg-character" style="display: none;">
+    <img src="https://cdn.glitch.global/1584c047-6111-4e8b-98d1-b725da2fb99f/vecteezy_bomb-3d-icon-isolated_49650963.png?v=1740344762028" alt="Секретный персонаж">
+</div>
+</body>
+  <script>
+  // Пример простого движения
+setInterval(() => {
+    const character = document.querySelector('.easter-egg-character');
+    if (character.classList.contains('active')) {
+        character.style.transform = `translateY(\${Math.random() * 20 - 10}px)`;
+    }
+}, 1000);
+  </script>
+</html>

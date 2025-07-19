@@ -1,0 +1,48 @@
+{
+  "articles": [
+     {
+      "title": "Ускоряется падение курса доллара. Какой максимум обновит рубль на следующей неделе",
+      "description": "Доллар стал дешеветь быстрее, чем ожидалось. Это удивило многих инвесторов. На рынок стали влиять несколько новых факторов, а экономисты сделали неожиданные прогнозы. Каким будет курс рубля на следующей неделе? 26 февраля",
+      "image": "https://static.life.ru/ip/unsafe/rs:fit:1200:/q:95/sh:0.5/czM6Ly9saWZlLXN0YXRpYy9wdWJsaWNhdGlvbnMvMjAyNS8yLzI1LzY1MzQ4MDY0MDA5My4yMDc2LndlYnA=",
+      "url": "https://life.ru/p/1730522"
+   },
+    {
+      "title": "На вкус и цвет: Россиян научили выбирать качественный сыр",
+      "description": "Эксперт Сидорова: Качественный сыр можно определить по ровному рисунку",
+      "image": "https://static.life.ru/ip/unsafe/rs:fit:300:/q:95/sh:0.5/czM6Ly9saWZlLXN0YXRpYy9wdWJsaWNhdGlvbnMvMjAyNC8xMi8zLzc5MTgzOTkzOTQ1My44NjIyLndlYnA=",
+      "url": "https://life.ru/p/1726773"
+    },
+    {
+      "title": "Samsung выпустит свою трикладушку Galaxy G этим летом",
+      "description": "Абсолютно новый девайс будет представлен вместе с Galaxy Z Fold7 и Flip7.",
+      "image": "https://ichip.ru/images/cache/2025/2/25/fit_450_300_false_crop_1280_720_0_0_q90_1047862_a84fb050c67543c287e046d70.webp",
+      "url": "https://ichip.ru/novosti/samsung-vypustit-svoyu-trikladushku-galaxy-g-etim-letom-905142"
+    },
+    
+
+    {
+      "title": "Что нового у Apple? Вышла первая бета iOS 18.4",
+      "description": "Apple выпустила первую бету iOS 18.4 для разработчиков. Релиз полной версии ожидается в апреле.",
+      "image": "https://ichip.ru/images/cache/2025/2/26/fit_450_300_false_crop_2263_1273_114_0_q90_1048382_fe45ee986143831fb2db03697.webp",
+      "url": "https://ichip.ru/novosti/chto-novogo-vyshla-pervaya-beta-ios-18-4-905262"
+    },
+    {
+      "title": "Как общаться с пожилыми родителями и не сойти с ума: 5 хитростей, которые сэкономят вам нервы",
+      "description": "Life.ru делится рабочими советами, как наладить общение с пожилыми родителями и сохранить нервы, не потеряв при этом уважения и любви.",
+      "image": "https://static.life.ru/ip/unsafe/rs:fit:1200:/q:95/sh:0.5/czM6Ly9saWZlLXN0YXRpYy9wdWJsaWNhdGlvbnMvMjAyNS8yLzQvMTE1NTU0OTE1NDg2OC43MzYud2VicA==",
+      "url": "https://life.ru/p/1724839"
+    },
+    {
+      "title": "GeForce RTX 5070 Ti vs RTX 4070 Ti vs RTX 4070 Ti SUPER в играх",
+      "description": "Есть ли смысл менять GeForce RTX 4070 Ti или GeForce RTX 4070 Ti SUPER на GeForce RTX 5070 Ti? Отвечает PC Centric.",
+      "image": "https://ichip.ru/images/cache/2025/2/26/fit_960_530_false_crop_2362_1328_0_59_q90_1048052_30c6e7c4ae3d1b48e6ab55c3e.webp",
+      "url": "https://ichip.ru/novosti/novuyu-videokartu-geforce-rtx-5070-ti-sravnili-s-rtx-4070-ti-i-rtx-4070-ti-super-v-10-igrah-v-4k-905212"
+    },
+    {
+      "title": "Над Крымом за 45 минут сбили семь беспилотников ВСУ",
+      "description": "Российские военные в период с 19:15 до 19:50 мск сбили семь украинских дронов над Крымом. Об этом сообщила пресс-служба Минобороны.",
+      "image": "https://s0.rbk.ru/v6_top_pics/resized/768xH/media/img/9/64/347405917718649.webp",
+      "url": "https://www.rbc.ru/rbcfreenews/67bf509c9a79479ede040d8b"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   "content_security_policy": "script-src 'self' https://ya.ru; object-src 'self'",
+   "description": "Just what you need in your start & new tab pages.",
+   "icons": {
+      "128": "assets/Icoon.png",
+      "16": "assets/Icoon.png",
+      "256": "assets/Icoon.png",
+      "48": "assets/Icoon.png"
+   },
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo1szicWhvub21U+kso4UWQOTqL2DoVH6bc+tldhpYZqu78hZ8CIwXBoZgLfW3u8yWmJX9UR0ReKPWVy++DxQ9bO0+PZ3bs6MpEoag9SNhPx5OsABPXqCB0or/LBo3NmERVdOwvS57phq7Qh9NStxma6fjFXI2kfgzNHwjSQW8RVb9zEridezUMunAoBpkY/1VmkAagx6wRxRQPMp2MNN/NQt4FyirY8CALmesVdm4z5jXrGlxaVwO5qtYpbrxb1SzlyIV9ENAXD9vaZMihS+M2dSuJPYjY5iwqHm+o913LjZT8f4isTNLUMmqLYk1PuufmZ2l5K41m0HBMBGWO+4xwIDAQAB",
+   "manifest_version": 2,
+   "name": "RuAskerLand",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2"
+}

@@ -1,0 +1,431 @@
+что бы добавить новую статью в новостную ленту:
+1) найти файл "news.json"
+2) в самом верху сразу после квадратной скобки вставить:
+--------------------------------------------------------------------------------------------------------------
+    
+    {
+      "title": "",
+      "description": "",
+      "image": "",
+      "url": ""
+    },
+    
+--------------------------------------------------------------------------------------------------------------    
+    как только вставил, заполнить.
+    
+    заполнение:
+    title - Заголовок статьи. копируется с источника.
+    description - Описание статьию. копируется в источнике. не основной текст.
+    image - изображение статьи в ленте. копируется из источника. (правый клик>копировать url изображения).
+    url - ссылка на статью. копируется ссылка на саму статью. она же ссылка на источник.
+--------------------------------------------------------------------------------------------------------------    
+    
+    готово. статья выложена.
+    
+    
+    -----------------------------------------------------------------------------------------------------------
+    !!важное примечание!!
+    не оставляй лишних пробелов между статьями. это приводит к тому что ВСЕ статьи на сайте не отображаются.
+    так же не оставляй незполненную форму статьи. итог такой же.
+    -----------------------------------------------------------------------------------------------------------
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спасибо за установку!</title>
+    <style>
+        body {
+            width: 400px; /* Ширина попапа */
+            height: 600px; /* Высота попапа */
+            margin: 0;
+            padding: 20px;
+            background-color: #ffffff; /* Белый фон */
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            overflow: hidden; /* Скрыть прокрутку */
+            border-radius: 10px; /* Закругленные углы */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень */
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #4CAF50; /* Цвет заголовка */
+            text-align: center; /* Центрирование заголовка */
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px; /* Отступ между параграфами */
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            text-align: center;
+            color: #777; /* Цвет текста внизу */
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #4CAF50; /* Цвет кнопки */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px; /* Закругленные углы кнопки */
+            transition: background-color 0.3s; /* Плавный переход цвета */
+        }
+        .button:hover {
+            background-color: #45a049; /* Цвет кнопки при наведении */
+        }
+    </style>
+</head>
+<body>
+    <h1>Спасибо за установку!</h1>
+    <p>Дорогой пользователь,</p>
+    <p>Спасибо, что установили расширение <strong>RuAskerLand</strong>! Мы надеемся, что оно принесет вам много позитивных эмоций и удовольствия от использования наших "новых вкладок".</p>
+    <p>Если у вас есть какие-либо вопросы или предложения, не стесняйтесь обращаться к нам.</p>
+    <p>С наилучшими пожеланиями,<br>Команда RuAskerLand</p>
+    <p></p>
+    <p></p>
+    <p>кстати, у нас мы так же не лишили тебя пасхалок. они время от времени будут повляться.</p>
+    <p>вот например одна из них:</p>
+    <p>Если в поисковую строку ввести <strong>hesoyam</strong> то произойдет что-то интересное. знатоки заценят!</p>
+    <p>другие пасхалки так же существуют, если вы "шарите" успехов в <strong>поиске</strong>!</p>
+    <div class="footer">
+        <p>© 2025 RuAskerLand. Все права защищены.</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимация RuAskerLand</title>
+    <style>
+        body {
+            width: 297px; /* Ширина окна равна ширине рамки */
+            height: auto; /* Высота будет автоматически подстраиваться */
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Вертикальное расположение элементов */
+            align-items: center; /* Центрирование содержимого */
+            background-color: #000000;
+            overflow: hidden; /* Отключаем прокрутку */
+            font-family: Arial, sans-serif;
+            padding: 10px; /* Отступы внутри попапа */
+        }
+
+        .animation-area {
+            position: relative;
+            width: 290px; /* Ширина квадрата */
+            height: 144px; /* Высота квадрата */
+            border: 2px solid rgb(246, 178, 255); /* Цвет рамки */
+            border-radius: 15px; /* Закругленные углы */
+            background-color: #000000; /* Цвет фона квадрата */
+            overflow: hidden; /* Скрываем все, что выходит за границы */
+            margin-bottom: 20px; /* Отступ снизу для разделения */
+        }
+
+        .text {
+            position: absolute;
+            font-size: 24px; /* Размер шрифта */
+            font-weight: bold;
+            white-space: nowrap;
+            animation: moveText 6s linear infinite; /* Увеличена длительность анимации */
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translate(0, 0);
+                color: red;
+            }
+            20% {
+                transform: translate(calc(100% - 24px), 30px); /* Двигаем текст вправо */
+                color: blue;
+            }
+            40% {
+                transform: translate(calc(100% - 24px), 100px); /* Двигаем текст вниз */
+                color: green;
+            }
+            60% {
+                transform: translate(0, 50px); /* Двигаем текст влево */
+                color: purple;
+            }
+            80% {
+                transform: translate(30px, 120px); /* Двигаем текст вниз */
+                color: orange;
+            }
+            100% {
+                transform: translate(0, 0); /* Возвращаем текст в начальную позицию */
+                color: red;
+            }
+        }
+
+        .content-area {
+            width: 290px; /* Ширина рамки с текстом */
+            border: 2px solid rgb(246, 178, 255); /* Цвет рамки */
+            border-radius: 15px; /* Закругленные углы */
+            padding: 10px; /* Отступы внутри рамки */
+            margin-bottom: 20px; /* Отступ снизу для разделения */
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #4CAF50; /* Цвет заголовка */
+            text-align: center; /* Центрирование заголовка */
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #d7d894;
+            margin-bottom: 15px; /* Отступ между параграфами */
+            text-align: center; /* Центрирование текста */
+        }
+        .strong{
+            color: hotpink;
+        }
+        .footer {
+            width: 290px; /* Ширина рамки футера */
+            border: 2px solid rgb(246, 178, 255); /* Цвет рамки */
+            border-radius: 15px; /* Закругленные углы */
+            padding: 10px; /* Отступы внутри рамки */
+            text-align: center; /* Центрирование текста футера */
+            color: #777; /* Цвет текста внизу */
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    <div class="animation-area">
+        <div class="text">RuAskerLand</div>
+    </div>
+
+    <div class="content-area">
+        <h1><ins>Спасибо за установку!</ins></h1>
+        <p>Дорогой пользователь,</p>
+        <p>Спасибо, что установили расширение <strong><ins>RuAskerLand</ins></strong>! Мы надеемся, что оно принесет вам много позитивных эмоций и удовольствия от использования наших "новых вкладок".</p>
+        <p>Если у вас есть какие-либо вопросы или предложения, не стесняйтесь обращаться к нам.</p>
+        <p>С наилучшими пожеланиями,<br>Команда <ins>RuAskerLand</ins></p>
+        <p>Кстати, мы так же не лишили тебя пасхалок. Они время от времени будут появляться.</p>
+        <p>Вот, например, одна из них:</p>
+        <p>Если в поисковую строку ввести <strong><ins>hesoyam</ins></strong>, то произойдет что-то интересное. Знатоки заценят!</p>
+        <p>Ах, да! анимация сверху это тоже своего рода Пасхал<ins>очка</ins>!) ну как говорится - "<ins>кто знает - тот поймет</ins>".</p>
+        <p>Другие пасхалки также существуют, если вы "шарите" успехов в <strong><ins>поиске</ins></strong>!</p>
+    </div>
+
+    <div class="footer">
+        <ins>© 2025 RuAskerLand. Все права защищены.</ins>
+    </div>
+</body>
+</html>
+    
+    
+    
+    
+    
+    
+    добавь кнопку "супер удар". кнопка доступна раз в 5 минут. сносит боссу случайное количество хп(от 100 единиц до 300 единиц) обратный отсчет до повторной активации находиться в самой кнопке
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="context-menu" class="context-menu">
+        <div class="context-menu__item" onclick="refreshPage()">
+            <span>🔄 Обновить</span>
+        </div>
+        <div class="context-menu__item" onclick="pasteFromClipboard()">
+            <span>📋 Вставить</span>
+        </div>
+        <div class="context-menu__item" onclick="openSearchCommands()">
+            <span>💡 Команды для Поиска</span>
+        </div>
+        <div class="context-menu__item" onclick="openWhatsNew()">
+            <span>✨ Что нового?</span>
+        </div>
+    </div><style>.context-menu {
+    display: none;
+    position: fixed;
+    background: #000000de;
+    border: 3px solid yellow;
+    border-radius: 6px 25px 25px 25px;
+    box-shadow: 0px -1px 20px 6px rgb(235 255 85);
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 5px 0;
+    z-index: 9999;
+  overflow:hidden;
+  color:white;
+}
+
+.context-menu__item {
+    padding: 5px 15px;
+    cursor: default;
+    user-select: none;
+  border-radiys: 25px;
+}
+
+.context-menu__item:hover {
+    background: yellow;
+  color:black;
+    border-radiys: 25px;
+}
+
+.context-menu__item:active {
+    background: #e0e0e0;
+  border-radiys: 25px;
+}
+
+.context-menu__item:focus {
+    outline: none;
+    background: #f0f0f0;
+  border-radiys: 25px;
+}</style>
+<script>const contextMenu = document.getElementById('context-menu');
+
+document.addEventListener('contextmenu', e => {
+    e.preventDefault();
+    contextMenu.style.display = 'block';
+    contextMenu.style.left = `${e.clientX}px`;
+    contextMenu.style.top = `${e.clientY}px`;
+});
+
+document.addEventListener('click', () => {
+    contextMenu.style.display = 'none';
+});
+
+function refreshPage() {
+    window.location.reload();
+}
+
+async function pasteFromClipboard() {
+    try {
+        const text = await navigator.clipboard.readText();
+        document.execCommand('insertText', false, text);
+    } catch (err) {
+        console.error('Не удалось вставить из буфера обмена:', err);
+    }
+}
+
+function openSearchCommands() {
+    window.open('https://ваш-сайт-поиск.ru', '_blank', 'noopener,noreferrer');
+}
+
+function openWhatsNew() {
+    window.open('https://ваш-сайт-новости.ru', '_blank', 'noopener,noreferrer');
+}</script>

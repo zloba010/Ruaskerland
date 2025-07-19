@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Голосовой чат-бот с самообучением</title>
+</head>
+<body>
+<div id="phone-widget" class="phone-widget">
+  <div class="phone-container">
+    <div class="phone-screen">
+      <div id="chatbot" class="chatbot">
+        <!-- Здесь будет отображаться чат-бот -->
+      </div>
+    </div>
+  </div>
+</div>
+  <style>
+  #phone-widget {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 200px;
+  background: #333;
+  border-radius: 10px 10px 0 0;
+  transition: 0.3s ease;
+  z-index: 9999;
+}
+
+.phone-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 50%;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#chatbot {
+  font-size: 14px;
+  color: #333;
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-widget.hidden {
+  bottom: -100px; /* Прячем виджет */
+}
+
+.phone-widget:hover {
+  bottom: 0; /* Показать при наведении */
+}
+  </style>
+  <script>
+  let phoneWidget = document.getElementById('phone-widget');
+let chatbot = document.getElementById('chatbot');
+
+// Когда курсор наведен на телефон
+phoneWidget.addEventListener('mouseenter', function () {
+  phoneWidget.classList.remove('hidden');
+  startChatbot();  // Запускаем бота при активации виджета
+});
+
+// Когда курсор уходит с телефона
+phoneWidget.addEventListener('mouseleave', function () {
+  phoneWidget.classList.add('hidden');
+});
+
+// Логика для работы с чат-ботом
+function startChatbot() {
+  chatbot.innerHTML = 'Привет! Как я могу помочь?';
+
+  // Здесь можно добавить голосовой ввод и вывод
+  let speechRecognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+  let speechSynthesis = window.speechSynthesis;
+
+  // Обработка голосового ввода
+  speechRecognition.onresult = function (event) {
+    let userQuery = event.results[0][0].transcript;
+    chatbot.innerHTML = `Вы сказали: "${userQuery}"`;
+
+    // Поиск в интернете через Yandex
+    if (userQuery.toLowerCase().includes('найти')) {
+      let query = userQuery.split('найти')[1].trim();
+      searchInYandex(query);
+    }
+  };
+
+  speechRecognition.start();
+
+  // Голосовой ответ
+  function speak(text) {
+    let utterance = new SpeechSynthesisUtterance(text);
+    speechSynthesis.speak(utterance);
+  }
+
+  function searchInYandex(query) {
+    let yandexSearchURL = `https://yandex.ru/search/?text=${encodeURIComponent(query)}`;
+    speak(`Ищу информацию по запросу: ${query}`);
+    window.open(yandexSearchURL, '_blank');
+  }
+}
+  </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
