@@ -182,7 +182,7 @@ function onSubmitSearch(event) {
  audio.play();
  typeMessage("Mission Completed. Respect+", missionMessage);
  } else if (query.startsWith("/qr")) {
- window.open('https://ruaskerland.glitch.me/qrkod.html', '_blank');
+ window.open('https://zloba010.github.io/Ruaskerland/qrkod.html', '_blank');
  } else if (query.startsWith("/kliker")) {
  window.open('https://zloba010.github.io/Ruaskerland/kliker.html', '_blank');
  } else if (query.startsWith("/radio")) {
