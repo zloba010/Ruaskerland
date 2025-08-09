@@ -1,5 +1,550 @@
 {
   "articles": [
+    {
+      "title": "Мединский сравнил руководство Украины с латиноамериканскими диктаторами",
+      "description": "Мединский: руководство Украины начинает напоминать латиноамериканских диктаторов",
+      "image": "https://cdnn21.img.ria.ru/images/07e9/06/09/2021852008_0:0:2878:1620_768x0_80_0_0_849dd3b58dc335c93f7cd39429fe2e9b.jpg.webp",
+      "url": "https://ria.ru/20250609/medinskij-2021872603.html"
+    },
+      {
+      "title": "Глава минспорта Курской области Харитонов покинул свой пост",
+      "description": "Харитонов покинул пост и.о. министра физкультуры и спорта Курской области",
+      "image": "https://cdnn21.img.ria.ru/images/07e8/06/1a/1955576138_0:240:1280:960_768x0_80_0_0_b4e01d127799d9fe789b545a2c69ae5a.jpg.webp",
+      "url": "https://rsport.ria.ru/20250609/haritonov-2021890038.html"
+    },
+    {
+      "title": "Mitsubishi не планирует возобновлять производство Outlander в России",
+      "description": "В компании Mitsubishi сообщили об отсутствии планов по возобновлению производства автомобилей в России.",
+      "image": "https://media.ixbt.site/WkLsNe_qH_PwTvSRVl-SYoHP6UE=/fit-in/1084x600/smart/https%3A%2F%2Fwww.ixbt.com%2Fimg%2Fn1%2Fnews%2F2025%2F5%2F1%2Fform_photoreport_imageid_592018_47f3b5fb0d32e701629353051_large.jpg",
+      "url": "https://www.ixbt.com/news/2025/06/09/mitsubishi-ne-planiruet-vozobnovljat-proizvodstvo-outlander-v-rossii.html"
+    },
+    {
+      "title": "Microsoft и Asus представили ROG Xbox Ally",
+      "description": "Компания Microsoft на вчерашней презентации анонсировала свою первую портативную игровую консоль Xbox... которая не совсем консоль Xbox.",
+      "image": "https://media.ixbt.site/O95aQxodAuRSTu5M5oh5ydOjmmU=/fit-in/1084x600/smart/https%3A%2F%2Fwww.ixbt.com%2Fimg%2Fn1%2Fnews%2F2025%2F5%2F1%2FAlly-X-Single-6a87311f758a69a86adf_large.jpg",
+      "url": "https://www.ixbt.com/news/2025/06/09/xbox-xbox-microsoft-asus-rog-xbox-ally.html"
+    },
+    {
+      "title": "Куриные крылышки в клубничной глазури",
+      "description": "Оригинальная ягодная глазурь с мёдом и пряностями классно дополнит жареные крылышки.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/06/shutterstock_143550238_1_1749058491_lh_average_step_2.jpg",
+      "url": "https://lifehacker.ru/recipe/kurinye-krylyshki-v-klubnichnoj-glazuri/"
+    },
+    {
+      "title": "Безалкогольный мохито с ревенём",
+      "description": "Освежающий напиток с необычным сезонным ингредиентом.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/05/shutterstock_1363309628_1_1748369240_lh_average_step_2.jpg",
+      "url": "https://lifehacker.ru/recipe/bezalkogolnyj-moxito-s-revenyom/"
+    },
+    {
+      "title": "Обзор всех «Астралов» из российского проката — от хуйшего к лучшему.",
+      "description": "Представленны обзоры хоррор-франшиз «Астрал», в которых перечислены и кратко описаны различные фильмы, связанные с этой тематикой. В обзоре представлены как оригинальные части...",
+      "image": "https://avatars.mds.yandex.net/get-kinopoisk-post-img/1539913/e77e531267aa6f54adba51b0842749e1/1920x1080",
+      "url": "https://www.kinopoisk.ru/media/article/4011266/"
+    },
+    {
+      "title": "На Android выйдет мобильная версия Сounter-Strike: Global Offensive. В сети показали, как она выглядит",
+      "description": "Команда TRYMISS выпустила трейлер неофициальной мобильной версии Сounter-Strike: Global Offensive...",
+      "image": "https://files.vgtimes.ru/posts/2025-06/na-android-vyydet-mobilnaya-versiya-sounter-strike-global-offensive.-v-seti-pokazali-kak-ona-vyglyadit-127313.webp?1748882992",
+      "url": "https://vgtimes.ru/news/127313-na-android-vyydet-mobilnaya-versiya-sounter-strike-global-offensive.-v-seti-pokazali-kak-ona-vyglyadit.html"
+    },
+    {
+      "title": "Телеканал Россия запускает новый сезон шоу Поймай меня, если сможешь",
+      "description": "Уже стал известен новый ведущий! Им стал популярный шоумен и юморист Владимир Мар-Куни.",
+      "image": "https://cdn-st1.smotrim.ru/vh/pictures/xw/610/671/9.jpg",
+      "url": "https://www.vesti.ru/article/4359584"
+    },
+    {
+      "title": "На PC вышел симулятор про выживание в постапокалиптической пустоши и управление городом",
+      "description": "В Steam состоялся релиз градостроительной стратегии про выживание в постапокалиптическом будущем Post-Apo Builder...",
+      "image": "https://files.vgtimes.ru/posts/2025-06/na-pc-vyshel-simulyator-pro-vyzhivanie-v-postapokalipticheskoy-pustoshi-i-upravlenie-gorodom-127320.webp?1748885177",
+      "url": "https://vgtimes.ru/news/127320-na-pc-vyshel-simulyator-pro-vyzhivanie-v-postapokalipticheskoy-pustoshi-i-upravlenie-gorodom.html"
+    },
+        {
+      "title": "Куриные шницели со сливочно-сырным соусом",
+      "description": "Кусочки филе тонко отбиты и обжарены в панировочных сухарях. Выходит аппетитно, особенно в сочетании с соусом.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/03/103_1742919746.jpg",
+      "url": "https://lifehacker.ru/recipe/kurinye-shniceli-so-slivochno-syrnym-sousom/"
+    },
+        {
+      "title": "В Steam вышел в релиз соулслайк-экшен AI Limit",
+      "description": "Состоялся релиз нового соулслайк-экшена AI Limit от разработчика Sense Games и издателя CE-Asia. Игра доступна на PC в Steam и PlayStation 5.",
+      "image": "https://files.vgtimes.ru/posts/2025-03/v-steam-sostoyalsya-reliz-soulslayk-ekshena-ai-limit-123191.webp?1743104522",
+      "url": "https://vgtimes.ru/news/123191-v-steam-sostoyalsya-reliz-soulslayk-ekshena-ai-limit.html"
+    },
+        {
+      "title": "Бань бао — паровые булочки со свининой",
+      "description": "Бань бао — это вьетнамские булочки с начинкой, которые готовятся на пару. Классической начинкой считается свиной фарш с варёными яйцами и копчёными колбасками. Обычно добавляют ещё древесные грибы, устричный соус и немного овощей.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/03/shutterstock_135153509_1_1742951612.jpg",
+      "url": "https://lifehacker.ru/recipe/ban-bao-bulochki/"
+    },
+        {
+      "title": "The First Berserker: Khazan вышла в Steam",
+      "description": "В Steam состоялся релиз The First Berserker: Khazan — захватывающего ролевого экшена от южнокорейской студии Neople, изданного NEXON. Игроки берут на себя роль легендарного генерала Казана, чья история начинается после преодоления смерти.",
+      "image": "https://files.vgtimes.ru/posts/2025-03/the-first-berserker-khazan-vyshla-v-steam-123194.webp?1743104845",
+      "url": "https://vgtimes.ru/news/123194-the-first-berserker-khazan-vyshla-v-steam.html"
+    },
+        {
+      "title": "Андрей Чертков назначен и.о главы правительства ДНР",
+      "description": "Андрей Чертков назначен и.о главы правительства ДНР вместо Солнцева",
+      "image": "https://cdnn21.img.ria.ru/images/07e7/05/10/1872073656_0:0:3081:1734_768x0_80_0_0_8cfa4c4d51fa9da2cd75352ae2e5d35b.jpg.webp",
+      "url": "https://ria.ru/20250327/vrio-2007626118.html"
+    },
+        {
+      "title": "Быстрый десерт из яблок и рикотты",
+      "description": "Приятное сочетание нежного сыра, мягких фруктов, маслянистых орехов и сладкого мёда.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/03/shutterstock_643949791_1_1743025884.jpg",
+      "url": "https://lifehacker.ru/recipe/bystryj-desert-iz-yablok-i-rikotty/"
+    },
+        {
+      "title": "Путин заявил о масштабных задачах по развитию Арктики",
+      "description": "Президент Владимир Путин провел совещание по вопросам развития Арктической зоны России и арктического транспортного коридора и заявил о масштабных задачах в регионе.",
+      "image": "https://cdnn21.img.ria.ru/images/07e5/06/01/1735116206_0:183:3152:1956_768x0_80_0_0_7ed26b833ec2bd1eae28ff32ffe0267f.jpg.webp",
+      "url": "https://ria.ru/20250327/arktika-2007729218.html"
+    },
+        {
+      "title": "Cюда поместятся все игры: Aoostar анонсировала «игровой NAS» с процессором AMD Ryzen 9",
+      "description": "Китайская компания Aoostar официально представила своё новое флагманское сетевое хранилище (NAS), которое получило название WTR Max. Эта модель должна поступить в продажу уже в марте. Новинку можно назвать значительно улучшенной WTR Pro, она предлагает расширенные возможности как для домашнего использования, так и для бизнеса.",
+      "image": "https://img-w.ixbt.site/live/images/original/20/93/55/2025/03/08/9281270364.jpg?w=877",
+      "url": "https://www.ixbt.com/live/data/cyuda-pomestyatsya-vse-igry-aoostar-anonsirovala-igrovoy-nas-s-processorom-amd-ryzen-9.html"
+    },
+        {
+      "title": "WhatsApp перестанет работать на части устройств: кого это коснется",
+      "description": "Ограничения в доступе к мессенджеру WhatsApp (принадлежит компании Meta, которая признана экстремистской организацией и запрещена в РФ) затронут пользователей, применяющих устаревшие версии операционных систем или владеющих устаревшими моделями смартфонов. Об этом сообщила руководитель коммуникационного агентства PGR agency Анастасия Бастрыкина.",
+      "image": "https://s.ura.news/images/news/figures/476/514/8c13359a-f1bf-4a28-89a9-1d84fd208ab3/reafgq/S-250.1.5.webp",
+      "url": "https://ura.news/news/1052899554"
+    },
+        {
+      "title": "В двух регионах России заблокировали Telegram на длительный срок",
+      "description": "Решение о блокировке принималось на федеральном уровне",
+      "image": "https://www.ixbt.com/img/x780/n1/news/2025/2/6/image_large.jpg",
+      "url": "https://www.ixbt.com/news/2025/03/08/v-dvuh-regionah-rossii-zablokirovali-telegram-na-dlitelnyj-srok.html"
+    },
+        {
+      "title": "Первая в России пожизненная гарантия, управление голосом на русском, полная адаптация и подогревы. К нам приехали официальные Avatr 11",
+      "description": "Электромобиль Avatr 11 официально дебютировал в России, и это не просто импорт — модель серьёзно доработали для суровых местных реалий.",
+      "image": "https://www.ixbt.com/img/x780/n1/news/2025/2/1/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-03-10%20052812_large.png",
+      "url": "https://www.ixbt.com/news/2025/03/10/pervaja-v-rossii-pozhiznennaja-garantija-upravlenie-golosom-na-russkom-polnaja-adaptacija-i-podogrevy-k-nam-priehali.html"
+    },
+        {
+      "title": "Новый трейлер Zenless Zone Zero посвятили Серебряному солдату",
+      "description": "Авторы Zenless Zone Zero выпустили трейлер героини S-ранга Солдат 0 Энби, принадлежащей к фракции «Вооружённые силы». Персонаж появится в обновлении 1.6 «Среди руин забвенья».",
+      "image": "https://files.vgtimes.ru/posts/2025-03/novyy-treyler-zenless-zone-zero-posvyatili-serebryanomu-soldatu-122003.webp?1741552507",
+      "url": "https://vgtimes.ru/news/122003-novyy-treyler-zenless-zone-zero-posvyatili-serebryanomu-soldatu.html"
+    },
+        {
+      "title": "Закуска а-ля капрезе",
+      "description": "Добавьте яйцо к классическому сочетанию моцареллы и помидоров. Вкусно и просто.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/03/301_1741363090.jpg",
+      "url": "https://lifehacker.ru/recipe/zakuska-a-lya-kapreze/"
+    },
+        {
+      "title": "Суд отклонил жалобы против регистрации Джорджеску кандидатом в президенты",
+      "description": "КС Румынии отклонил жалобы против регистрации Джорджеску кандидатом в президенты",
+      "image": "https://cdnn21.img.ria.ru/images/07e8/0c/07/1987860150_0:0:2950:1660_1280x0_80_0_0_9d6efeb2dd67462bbceef597f2e5c73b.jpg.webp",
+      "url": "https://ria.ru/20250308/rumyniya-2003836704.html"
+    },
+        {
+      "title": "Картофельный гратен с корнем сельдерея",
+      "description": "Сочетание двух овощей сделает вкус классического гратена насыщеннее и интереснее.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/03/107_1741352621.jpg",
+      "url": "https://lifehacker.ru/recipe/kartofelnyj-graten-s-kornem-seldereya/"
+    },
+        {
+      "title": "Появились новые скриншоты автосимулятора с открытым миром на UE5, который делают в России",
+      "description": "Российская студия Forward Development опубликовала несколько скриншотов автосимулятора City Car Driving 2.0. Изображения появились на странице игры во «ВКонтакте».",
+      "image": "https://files.vgtimes.ru/posts/2025-03/poyavilis-novye-skrinshoty-avtosimulyatora-s-otkrytym-mirom-na-ue5-kotoryy-delayut-v-rossii-121997.webp?1741542665",
+      "url": "https://vgtimes.ru/news/121997-poyavilis-novye-skrinshoty-avtosimulyatora-s-otkrytym-mirom-na-ue5-kotoryy-delayut-v-rossii.html"
+    },
+        {
+      "title": "Делегация из Мьянмы прибыла в Самарскую область",
+      "description": "Делегация из Мьянмы во главе с Мин Аун Хлайном прибыла в Самарскую область",
+      "image": "https://cdnn21.img.ria.ru/images/07e9/03/08/2003790063_0:0:1275:717_1280x0_80_0_0_ade4e7c1a75167f7b78adf3ed7c7d432.jpg.webp",
+      "url": "https://ria.ru/20250308/myanma-2003786024.html"
+    },
+        {
+      "title": "Santa Monica опровергла слухи о мартовском анонсе переизданий God of War и показала новый арт с Кратосом",
+      "description": "В последние дни в сети курсировала информация, что Santa Monica Studio сделает громкий анонс на выставке в честь 20-летия God of War. Студия решила предупредить фанатов, чтобы те поумерили свои ожидания.",
+      "image": "https://files.vgtimes.ru/posts/2025-03/santa-monica-oprovergla-sluhi-o-martovskom-anonse-pereizdaniy-god-of-war-i-pokazala-novyy-art-s-kratosom-121941.webp?1741423627",
+      "url": "https://vgtimes.ru/gaming-news/121941-santa-monica-oprovergla-sluhi-o-martovskom-anonse-pereizdaniy-god-of-war-i-pokazala-novyy-art-s-kratosom.html"
+    },
+        {
+      "title": "В сеть слили вступительный ролик Project U, кооперативного шутера от Ubisoft",
+      "description": "Новые утечки из Ubisoft — на этот раз в сеть попал вступительный ролик Project U, ещё одного проекта компании. Игра была анонсирована ещё в 2022 году и с большой вероятностью попала в «производственный ад».",
+      "image": "https://files.vgtimes.ru/posts/2025-03/v-set-slili-vstupitelnyy-rolik-project-u-kooperativnogo-shutera-ot-ubisoft-121948.webp?1741429289",
+      "url": "https://vgtimes.ru/gaming-news/121948-v-set-slili-vstupitelnyy-rolik-project-u-kooperativnogo-shutera-ot-ubisoft.html"
+    },
+        {
+      "title": "Рис с морковью на сковороде",
+      "description": "Крупа готовится вместе с овощами и насыщается их вкусом. Такое блюдо можно приготовить во время поста или подать на гарнир к мясным блюдам.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/03/105_1741269233.jpg",
+      "url": "https://lifehacker.ru/recipe/ris-s-morkovyu-na-skovorode/"
+    },
+        {
+      "title": "Mistral AI планирует создать превосходящую DeepSeek модель ИИ на открытом коде Об этом сообщает Рамблер.",
+      "description": "Французский стартап Mistral AI планирует выпустить собственные модели искусственного интеллекта (ИИ) на основе открытого исходного кода, которые должны превзойти успех китайского DeepSeek.",
+      "image": "https://news.store.rambler.ru/img/075b2a81ac12cf528bf041256af0a6ac?img-format=auto&img-1-resize=height:700,fit:max",
+      "url": "https://news.rambler.ru/tech/54313570-mistral-ai-planiruet-sozdat-prevoshodyaschuyu-deepseek-model-ii-na-otkrytom-kode/"
+    },
+        {
+      "title": "«Царевна-лягушка»: новая русская сказка от… застройщика",
+      "description": "После февральского перерыва на блокбастеры с Юрой Борисовым в российский прокат возвращаются киносказки. Аккурат к 8 Марта на экраны выходит «Царевна-лягушка» — современное переосмысление русской народной сказки о лягушке, превращающейся в девицу-красавицу. Вместо болота и волшебной стрелы здесь парковый пруд и шарик для гольфа, а вместо Кощея — Никита Кологривый в шортах а-ля Versace. Посыл у картины тоже нестандартный, считает Злата Лещук.",
+      "image": "https://avatars.mds.yandex.net/get-kinopoisk-post-img/2268018/392ad6030554771e1ff07dff304b459d/1920x1080",
+      "url": "https://www.kinopoisk.ru/media/news/4010801/"
+    },
+        {
+      "title": "Обзор ручного отпаривателя Evolution Handy 2",
+      "description": "Отпариватель Evolution Handy 2 — это компактное устройство с двумя режимами интенсивности пара, которое обещает стать незаменимым помощником в уходе за одеждой.",
+      "image": "https://www.ixbt.com/img/r30/00/02/80/83/IMG9346.jpg",
+      "url": "https://www.ixbt.com/home/evolution-handy-2-review.html"
+    },
+        {
+      "title": "Курица в лимонной глазури за полчаса",
+      "description": "Кусочки филе покрыты кисло-сладкой глазурью с нотками имбиря и чеснока.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/03/103_1741266113.jpg",
+      "url": "https://lifehacker.ru/recipe/kurica-v-limonnoj-glazuri-za-polchasa/"
+    },
+        {
+      "title": "В Telegram обнаружен новый вирус, рассчитанный на доверчивых пользователей.",
+      "description": "Исследователи выявили свежую эксплойт-атаку под названием «EvilLoader», нацеленную на владельцев устройств на Android и распространяемую посредством Telegram. ",
+      "image": "https://static.mk.ru/upload/entities/2025/03/07/22/articles/detailPicture/86/14/fa/c5/855a0d6f33c44c95c7cfbbef94b2b2ef.jpg",
+      "url": "https://news.rambler.ru/tech/54313643-v-telegram-obnaruzhen-novyy-virus-rasschitannyy-na-doverchivyh-polzovateley/"
+    },
+        {
+      "title": "Google прекратил работу с дата-центрами в России. Об этом сообщает Рамблер...",
+      "description": "Google отключил соединения с рядом российских точек обмена трафиком (IX) и дата-центров.",
+      "image": "https://news.store.rambler.ru/img/474a88e7b55d0b1fbf34319509f5e146?img-format=auto&img-1-resize=width:220,height:165,fit:cover&img-2-filter=sharpen",
+      "url": "https://news.rambler.ru/tech/54313923-google-prekratil-rabotu-s-data-tsentrami-v-rossii/"
+    },
+        {
+      "title": "Чизкейк без выпечки «Зебра»",
+      "description": "Десерт готовится из сметаны, сгущёнки и сливок. Он держит форму благодаря желатину. А красивый узор делается проще простого.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/03/shutterstock_1711763809_1_1741257051.jpg",
+      "url": "https://lifehacker.ru/recipe/chizkejk-bez-vypechki-zebra/"
+    },        
+    {
+      "title": "Песков рассказал о перспективах сотрудничества с Абхазией",
+      "description": "Песков, говоря о сотрудничестве с Абхазией, заявил, что никто не будет обижен",
+      "image": "https://cdnn21.img.ria.ru/images/realty/40800/99/408009924_0:0:3018:1698_1280x0_80_0_0_4a5e92302e4f78c60cff618b25f4bb64.jpg.webp",
+      "url": "https://ria.ru/20250306/peskov-2003383178.html"
+    },
+        {
+      "title": "Обзор 12-дюймового планшета Teclast T60 Plus",
+      "description": "Полгода назад мы рассказывали про планшет Teclast T65 Max с экраном диагональю почти 13 дюймов. Тогда мы отмечали, что это специфическое нишевое решение — и в силу размера устройства, и по причине его недостатков. И вот производитель выпустил модель Teclast T60 Plus — поменьше, но всё равно весьма крупную: 12 дюймов.",
+      "image": "https://www.ixbt.com/img/x780x600/r30/00/02/79/98/Snimok-jekrana-20250121-v-23.40.46.png",
+      "url": "https://www.ixbt.com/mobilepc/teclast-t60-plus-review.html"
+    },
+        {
+      "title": "В МИД РФ расценили визит Зеленского в США как полнейший политический провал",
+      "description": "Москва. 1 марта. INTERFAX.RU - Визит президента Украины Владимира Зеленского в Вашингтон являет собой полнейший политический и дипломатический провал киевского режима, говорится в комментарии официального представителя МИД России Марии Захаровой, размещенном в субботу на сайте российского внешнеполитического ведомства.",
+      "image": "https://s10.stc.yc.kpcdn.net/share/i/12/14355914/wr-960.webp",
+      "url": "https://www.interfax.ru/world/1011523"
+    },
+        {
+      "title": "Linux Mint анонсирует редизайн меню Cinnamon и переход на HWE-ядро",
+      "description": "Команда Linux Mint разрабатывает новый дизайн меню Cinnamon с боковой панелью. Linux Mint 22.1 занимает 70% загрузок, LMDE 6 — 14%. Сайт переходит на контейнеры, а релиз 22.2 получит HWE-ядро для поддержки нового оборудования",
+      "image": "https://cdn.comss.net/img/012025/CinnamonMint.png?aspect_ratio=3:2",
+      "url": "https://www.comss.ru/page.php?id=15862"
+    },
+        {
+      "title": "Главное, что нужно знать про клавиатуры — мембранные и механические",
+      "description": "Клавиатура — пожалуй, главный инструмент ввода в современных компьютерах, который имеет множество параметров: размер, формат, профиль, подсветка, соединение, переключатели, материалы. Все они влияют на опыт использования — комфорт, быстроту печати, качество игры или работы. так что же стоит себе приобрести ?",
+      "image": "https://habrastorage.org/r/w1560/getpro/habr/upload_files/55a/d46/6ca/55ad466cac7201e30009d748da8869c3.png",
+      "url": "https://habr.com/ru/companies/first/articles/886648/"
+    },
+        {
+      "title": "Гугл добавил функцию «Результаты о вас»",
+      "description": "Google добавил возможность удалять личную информацию с помощью недавно обновленного инструмента «Результаты о вас» («Results About You»).",
+      "image": "https://i0.wp.com/positivnews.ru/wp-content/uploads/2025/03/vapva.png?w=843&ssl=1",
+      "url": "https://positivnews.ru/gugl-dobavil-funkciju-rezultaty-o-vas/"
+    },
+        {
+      "title": "Роскомнадзор: YouTube по-прежнему недоступен на территории России",
+      "description": "В настоящее время видеохостинг YouTube по-прежнему недоступен для использования на территории России. Об этом ТАСС сообщили в пресс-службе Роскомнадзора.",
+      "image": "https://news.store.rambler.ru/img/d0cc7c11152eb9d007f2aff0e67c9974?img-format=auto&img-1-resize=height:700,fit:max",
+      "url": "https://news.rambler.ru/moscow_city/54281039-roskomnadzor-youtube-po-prezhnemu-nedostupen-na-territorii-rossii/"
+    },
+        {
+      "title": "Общий обзор Telegram Mini App: особенности, преимущества, ограничения и примеры",
+      "description": "Telegram Mini App — это встроенное в мессенджер веб-приложение, которое дает возможность пользоваться сервисом без установки отдельных программ...",
+      "image": "https://habrastorage.org/getpro/habr/upload_files/188/d1e/5b3/188d1e5b313b12b6621b639d2c7f56d2.webp",
+      "url": "https://habr.com/ru/articles/886864/"
+    },
+        {
+      "title": "Торт «Карамельный латте»",
+      "description": "Мягкие пропитанные коржи с кофейным вкусом, нежнейший крем и карамель — идеальное сочетание.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/02/101_1740744672.jpg",
+      "url": "https://lifehacker.ru/recipe/tort-karamelnyj-latte/"
+    },
+        {
+      "title": "Volkswagen выпустит недорогой электрокар",
+      "description": "Volkswagen возвращается к своим истокам — доступным «малолитражным» автомобилям. В планах компании, как минимум, выйти с новой машиной на рынок Европы.",
+      "image": "https://i0.wp.com/positivnews.ru/wp-content/uploads/2025/02/123fvayayvayva.png?w=749&ssl=1",
+      "url": "https://positivnews.ru/volkswagen-vypustit-nedorogoj-elektrokar/"
+    },
+        {
+      "title": "Печенье с шоколадной начинкой",
+      "description": "Приготовить вкусное и красивое печенье очень просто.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/02/105_1740747936.jpg",
+      "url": "https://lifehacker.ru/recipe/pechene-s-shokoladnoj-nachinkoj/"
+    },
+        {
+      "title": "Новый дизайн, 6 лет обновлений, IP67 и зарядка, как у Galaxy S25 Ultra. Представлен Samsung Galaxy A56",
+      "description": "Сегодня Samsung представила среднебюджетный флагман Galaxy A56. Смартфон получил новое исполнение тыльной панели в стилистике Samsung Galaxy S10 и свежую однокристальную систему Exynos 1580. При этом новинка оказалась тоньше предшественника.",
+      "image": "https://www.ixbt.com/img/x780/n1/news/2025/2/0/gsmarena_103_large.jpg",
+      "url": "https://www.ixbt.com/news/2025/03/02/6-ip67-galaxy-s25-ultra-samsung-galaxy-a56.html"
+    },
+        {
+      "title": "самые влиятельные игры последних лет",
+      "description": "Некоторые особенно успешные виртуальные развлечения производят большое впечатление не только на геймеров, но и на разработчиков. Если выходит отличная игра, которая двигает целый жанр вперёд, она порой задаёт тренды для индустрии, вдохновляет студии и превращается в объект для подражания. Именно о таких проектах, оказавших влияние на многие современные игры, и пойдёт речь в этом материале.",
+      "image": "https://files.vgtimes.ru/posts/2025-02/mnenie-samye-vliyatelnye-igry-poslednih-let-121388.webp?1740672240",
+      "url": "https://vgtimes.ru/articles/121388-mnenie-samye-vliyatelnye-igry-poslednih-let.html"
+    },
+        {
+      "title": "Microsoft завершает эру Skype: платформа уйдет в мае",
+      "description": "Microsoft объявила о полном прекращении поддержки Skype в мае этого года, окончательно переключая пользователей на платформу Teams для звонков и чатов. Это событие знаменует конец эпохи для сервиса, который впервые появился в 2003 году и был приобретен Microsoft в 2011 году. Сообщение о завершении работы Skype было замечено в последней предварительной версии Skype для Windows. В нем говорится: «Начиная с мая, Skype больше не будет доступен. Продолжайте звонки и чаты в Teams».",
+      "image": "https://files.vgtimes.ru/posts/2025-02/microsoft-zavershaet-eru-skype-platforma-uydet-v-mae-121435.webp?1740733786",
+      "url": "https://vgtimes.ru/news/121435-microsoft-zavershaet-eru-skype-platforma-uydet-v-mae.html"
+    },
+        {
+      "title": "В тизере «Шрека 5» использовали завирусившийся мем от блогера из России",
+      "description": "Оказывается, к первому тизеру «Шрека 5» приложил руку обычный блогер из России. Именно его TikTok-фильтр с танцующим зелёным огром был использован DreamWorks в трейлере.",
+      "image": "https://files.vgtimes.ru/posts/2025-02/v-tizere-shreka-5-ispolzovali-zavirusivshiysya-mem-ot-blogera-iz-rossii-121442.webp?1740738359",
+      "url": "https://vgtimes.ru/movies-and-tv-series/121442-v-tizere-shreka-5-ispolzovali-zavirusivshiysya-mem-ot-blogera-iz-rossii.html"
+    },
+        {
+      "title": "На Android и iOS вышла старая игра про Лару Крофт",
+      "description": "В Google Play и App Store состоялся релиз мобильной версии Lara Croft and the Guardian of Light, изометрического спин-оффа про расхитительницу гробниц Лару Крофт. Игра стоит $10.",
+      "image": "https://files.vgtimes.ru/posts/2025-02/na-android-i-ios-vyshla-staraya-igra-pro-laru-kroft-121465.webp?1740762301",
+      "url": "https://vgtimes.ru/news/121465-na-android-i-ios-vyshla-staraya-igra-pro-laru-kroft.html"
+    },
+        {
+      "title": "Жительницу Симферополя задержали за кражу 7 тыс рублей из банкомата",
+      "description": "В полицию обратился местный житель, который пополнял карту через банкомат",
+      "image": "https://30aa9fc3-1eca-42d5-af4a-87b1ab4fea18.selstorage.ru/news_photo/118179/big_f7889356ba8fcc725b0f6fcc2bf7973a.jpg",
+      "url": "https://simferopol.reklama-crimea.com/news_entries/111665"
+    },
+        {
+      "title": "ФСБ предотвратила теракт против крымского митрополита Тихона",
+      "description": "В Москве предотвращён теракт против крымского митрополита Тихона. Об этом утром 28 февраля сообщили в центре общественных связей ФСБ России",
+      "image": "https://30aa9fc3-1eca-42d5-af4a-87b1ab4fea18.selstorage.ru/news_photo/118151/big_Screenshot%20_2_.png",
+      "url": "https://simferopol.reklama-crimea.com/news_entries/111637"
+    },
+        {
+      "title": "Авто загорелось после лобового столкновения: в Красноярском крае в ДТП на трассе погиб человек",
+      "description": "По предварительным данным, на втором километре объездной автодороги Норильск — Талнах 46-летний водитель",
+      "image": "https://news.sgnorilsk.ru/wp-content/uploads/sites/4/2025/02/avariya-talnah.jpg",
+      "url": "https://ngs24.ru/text/incidents/2025/02/26/75153575/"
+    },
+        {
+      "title": "Мошенники оформили на Жерара Депардье микрозайм в России",
+      "description": "Мошенники оформили на актера Жерара Депардье микрозайм в России. Об этом сообщает Mash",
+      "image": "https://cdnstatic.rg.ru/resize800x533/uploads/images/gallery/8826db17/bc8a45f8.jpg",
+      "url": "https://rg.ru/2025/02/28/mash-moshenniki-oformili-na-zherara-deparde-mikrozajm-v-rossii.html"
+    },
+        {
+      "title": "Халява: сразу 10 игр и 5 программ отдают бесплатно и навсегда в Google Play и App Store",
+      "description": "В мобильных цифровых сервисах Google Play и App Store стартовали новые халявные предложения. В течение ограниченного времени пользователи Android и iOS могут получить сразу десять игр и пять приложений.",
+      "image": "https://files.vgtimes.ru/posts/2025-02/halyava-srazu-10-igr-i-5-programm-otdayut-besplatno-i-navsegda-v-google-play-i-app-store-121424.webp?1740722153",
+      "url": "https://vgtimes.ru/gaming-news/121424-halyava-srazu-10-igr-i-5-programm-otdayut-besplatno-i-navsegda-v-google-play-i-app-store.html"
+    },
+        {
+      "title": "Создатель PUBG показал трейлер новой выживалки в огромном открытом мире",
+      "description": "Создатель PUBG Брендан Грин (Brendan Greene) выпустил первый трейлер своего следующего большого проекта. Prologue: Go Wayback! представляет собой амбициозную выживалку, где весь мир создан при помощи машинного обучения.",
+      "image": "https://files.vgtimes.ru/posts/2025-02/sozdatel-pubg-pokazal-treyler-novoy-vyzhivalki-v-ogromnom-otkrytom-mire-121427.webp?1740726099",
+      "url": "https://vgtimes.ru/news/121427-sozdatel-pubg-pokazal-treyler-novoy-vyzhivalki-v-ogromnom-otkrytom-mire.html"
+    },
+        {
+      "title": "Разработчики Metro намекнули, что новую часть могут анонсировать в марте",
+      "description": "4A Games, известная по серии Metro, решила внести ясность после анонса La Quimera. Вчера подразделение 4A Games Ukraine провело ребрендинг — теперь оно называется Reburn — и объявило о разработке научно-фантастического шутера. Из-за этого многие подумали, что продолжения трилогии можно не ждать.",
+      "image": "https://files.vgtimes.ru/posts/2025-02/razrabotchiki-metro-nameknuli-chto-novuyu-chast-mogut-anonsirovat-v-marte-121429.webp?1740729166",
+      "url": "https://vgtimes.ru/news/121429-razrabotchiki-metro-nameknuli-chto-novuyu-chast-mogut-anonsirovat-v-marte.html"
+    },
+        {
+      "title": "Писатель-сатирик Альтов признался, что его иногда коробит от стендапа",
+      "description": "Писатель-сатирик Семен Альтов в интервью телеканалу Россия по случаю своего 80-летия признался, что просматривает выступления стендап-комиков, но иногда его коробит из-за жесткости поднимаемых тем.",
+      "image": "https://cdn-st1.smotrim.ru/vh/pictures/xw/328/049/5.jpg",
+      "url": "https://www.vesti.ru/article/4314635"
+    },
+        {
+      "title": "Свинина с яблоками и соусом в нормандском стиле",
+      "description": "Соус на основе сухого сидра со сливками отлично дополняет вкус мяса.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/02/203_1740609415.jpg",
+      "url": "https://lifehacker.ru/recipe/svinina-s-yablokami-v-normandskom-stile/"
+    },
+    
+        {
+      "title": "Что осталось за кадром: Xiaomi 15 Ultra — первый в мире смартфон, который позволяет сжимать фото в тысячи раз и обмениваться ими через спутник",
+      "description": "Одним из важнейших моментов с презентации Xiaomi 15 Ultra, который остался за кадром...",
+      "image": "https://www.ixbt.com/img/x780/n1/news/2025/1/5/GkyrkoXbwAAA98__large.jpg",
+      "url": "https://www.ixbt.com/news/2025/02/28/xiaomi-15-ultra.html"
+    },
+        {
+      "title": "Путин примет участие в заседании коллегии ФСБ",
+      "description": "МОСКВА, 27 фев - РИА Новости. Президент России Владимир Путин примет участие в заседании коллегии ФСБ РФ, рассказал пресс-секретарь главы государства Дмитрий Песков",
+      "image": "https://cdnn21.img.ria.ru/images/07e8/0c/13/1990194984_0:28:3191:1823_1280x0_80_0_0_9c7bb938de233fb1cbd3ec008b8bf506.jpg.webp",
+      "url": "https://ria.ru/20250227/putin-2001917381.html"
+    },
+        {
+      "title": "Предложение с подвохом. Что Запад готовит России за спиной Трампа",
+      "description": "МОСКВА, 28 фев — РИА Новости, Виктор Жданов. Украина сменила главного партнера. На фоне упадка отношений с США лидеры Евросоюза усиливают поддержку киевского режима. Брюссель хочет не только помочь Зеленскому удержать власть, но и повлиять на исход конфликта в свою пользу. Какие на это шансы — в материале РИА Новости",
+      "image": "https://cdnn21.img.ria.ru/images/07e7/02/09/1850759898_0:13:3054:1731_1280x0_80_0_0_8ff8dee34bb03037463083708570e97a.jpg.webp",
+      "url": "https://ria.ru/20250228/zapad-2001765206.html"
+    },
+        {
+      "title": "Встречаются Горшок и Князь в Мурманской области... Репортаж со съемок фильма «Король и Шут. Навсегда»",
+      "description": "В сказочном мире большие проблемы: его захватили орды нечисти во главе с Некромантом, Горшок и Князь вместе с Принцессой и Вдовой героически бьются с врагами...",
+      "image": "https://kinopoisk-ru.clstorage.net/APv170079/9f6ec033/cUIBaeRljxGDlSVbRc22zS6RaKoUtcEN4S4kWw6FpiEiw-jJmYpA414heZdFJlTmz_mZm6WzRYk14aD4sC7sNvFjIV0xEbug8xAEejQ4tjhe1elfoWThCITqRYo7AENVIcCL6z94suFN99uVdCPQh0oMLH7B10AdQNVh-cP9TQCDQgGZNXZPpMDkVq63fddvfGAOuVV0J3yT3hH4_VZGkxLjW4qP-xAwTZVbNcZQw2O6jkz-wsYj7qFgk7mDPnijAZPiGpZFPHfwBMbNhu92Hl6gPHrVpHR_AQ9QK30l9sKDEQqbzFkxUyw1CpekYcHjGz0vvZPH0j3hURPqom7bIeLCITvW1F2FUzUV_oc9ZJ88ciwoxCcHXJFOUFk_JjRgA7D7ef858oA9l3pVpFMB4jr8f5ywp6OfcjPCmLFt2xICc6M4ZWUvRiJ2RA7kb0beD8BOO6SUNFzz3SLr3pVmQUDySVlu-sJQfUfpljZTksGLvB7_Q0WjrQKhQDog_siSgkGB-jQmDETiB5S953_nHM1TfJpWxNfPUFxgye00VeAA8mibTvsCww4HWjVFs_DT2Pzez0L0wK5gwwP6Irw4AUARM-gX1o2ngXUHPpS-9n_vg35oNXXU7ONNsDl_VZRS0SE7a-5JUvEfNNoEhPDzU4vcn5yitCIvYuKw-mAeKUPTcxIIBkbehkJHlu32Tsb_L5J-W7bHJW3DzUOLj5VnosCzOOud-tGDDRTpFMXj8YO57o3fYvTS3ADBQFqzP7kiAyLCaddmf6Vzt-Ve1x3mn62gjLt0pGesog_DGD5URlDS8Tpr7QgwkH70qza3AfChek_Pn3LEwq9BUVLooL5b0RAhw1p1VY2FoZZWPDQNhw2cEE1qVsXHz6I8UlnOBFdwkZHIyo3pYEFvB5uHpnJiUIiu7B6w9tJ8wFESKQK_y-DAc7B4l_c_VZEmxE6nHqQf_9CPyOW0dJwQfZMprCbkouAQO1lN2aIi_VUJhyXCYFNaLP5sEvXi_PPggakzjFtT8QJQCmYXvhUAVad9ZTylLfyyj9hGJSVcMD_QOv12JaGjMzqpH5oDUI_l6qc1EuOw6JxuboFGw70SELAZgV_b4_BQYgk1JO6V85WELXVO5qwuUv0ZxYeHfuGcw9jeNjXgsrFIm22bUCMP5giFRTEgYSm9LT7Q5jPPcUMRqZMOiaCBITNr5BQvNyLWxnzmT3WsXBC-eubUxV9jnOIrnMekArFh6mvtiHFCP4f7FcXQgwOLnj8cIrYT3hCxAPnSzRvxYaAzGcY0z2cAFfaPZz-1Ln4gTChUl9W_sbxhGPzUR1MSogm574oDIy5V64T3oaHD2N0-PuK2oO6wcMCI4S3aMwBjcymGxl4FcdYmD-Sulj3-cWxaNraVHfFN0pquJaXzs3Oam__LEKF-dSuFJ7Mhgdutnn-whIH-QUFh2PFOS5LCEhJY1Of-xaB2BP0WbIT87hJeqIXn5cyhTiGYjgfGwzJAa0hu-BFQr-drRRWTIYMr7DxtA8SR_MPAEJnDTCuR4dIhK9UG_NRhpwY_JW9krU6TfcvV57UfsB1R6vxVhKLhYSiqHStTc-wVSbX3AcOw2Y7_vUDk8nyD4zKrMV5qI5DTw4hGBL43MRXGn8QdlE0ccq4qVqUXzuOcMMvvV6aAoRMp2I5K0EBcZNpFpQPTcrpu7n9ilqIfAONj6OKMCbNycZI4tfUOhAJ1lKzlHfUO_DOe6uWkpJ4y3MDLPvZGY6Jg-zsMWXICjOdpVYbSMlNrnA7cI-Qh7UKiIZszTuhho3OASdXmDPVTFfVPtQ9HXnxxzlg1xPRc0S1S6R9ExLMCUGu4fAhTAE0FOzUWwnDCmyyszvKH8h3woqGrsR47USOicbvUx8-HstekrfVs5D3PQr8ZZYS0rPDuwlnsZnZiEzG6e-4bcKCtt8vG15JzIbmNLawTx2CcsqDAaGOfipHwYyBKlAecB8HEVl7UredNDiIMqIX2V13TrRIZjlbXg1BByqmfynNR__XZ9bVyw3L7n7w8cfSSzkFhMCrw3HgT8AEz-AYHLqWQ5TSvdu4kzG3ATDpHZgR88B9w-j82JGNDI8iIPhuQMPwXKFbF0OGyK-wMb0Anwa3TEwDqgGw4o2Fx41qFZaz1odZGnYY8tI_sAl6aBITG36J9IZschaRi0KP5W7-pEmA-9ZnlhxOS07g-7o6RdOLMIkDQSuIs2nGTMsLq1kTtd3HVRX1kfPRsTUF8WKV0BmzwDSH4r0eXUbJwWep82WBCj6SaNgRA4HDqXmzNUHXSDFMgAYkA7BnDk5FSKvUU73WDJuadVnzUP45CzcpFlhbMgW_iKDxXN0ASc_sovagSYN43aHaUApEwqZz-rwPGkSyz4NAa0j_KMOPBk6iF1n7lMwVWfvd99O988p979aWE7IBPAln9Z_aDQpIZKhzKcOJd9Yglh9BRg7scX77ShUHMEBMiWREey-LQ8vJ5NlSM9CDGdk72jARtfAAPWgeG1I8DbTIIP0YmchDh-lovCMDC7hbqdSTAkdA53m8eYuVi3GAT4HnTLvuwgNITOlXXzqQwBFcO1nwFr6xQ3gt1p-atsm_RCoxnliJTA1r7THlSwJ2ku-a0caHS-K2cHqP1YG1wMJBogRw6QvPz4_g0Vt92MubFfjRt9x2MUJ3IhUUFvSEfgmo9t-Zw8oAZ6E37wlM9B7nXJWGQspvf_Y7ApSKe0NHBibLuOlDhcRIbtRW89PMUN0yG7zQ8_5OeelSF5T8hPSGZTgW0gSERiIi9a1LA_bd5xyWAQ2HJLz_MALfwzKNjIoswvgoCgBJTm6U2vKUCJ8Y_Rm7U3m_QDuomVQfN4C5QWc1G5nFic1kbD0oDYNxFmZcmMGPgm_xNH5LEsE4TE2FbAk_JQKOR4ypWR-7UQZY2XUa9hGx90hyqBYRUvcLsICveZ-awwQGrm34poFJ_x9kWlRKBA5pd7dwgtDIuISAQg",
+      "url": "https://www.kinopoisk.ru/media/article/4010724/"
+    },
+        {
+      "title": "Суп с фрикадельками из куриного фарша",
+      "description": "Шарики из фарша — удачное дополнение к овощному супу на курином бульоне. А с фенхелем аромат блюда будет неповторимым",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2024/01/101_1705572890-1280x640.jpg",
+      "url": "https://lifehacker.ru/recipe/sup-s-frikadelkami-iz-kurinogo-farsha/"
+    },
+        {
+      "title": "Сицилийские пончики из рикотты",
+      "description": "Тесто готовится очень быстро, а сами пончики выходят румяными и воздушными.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/02/103_1740661748.jpg",
+      "url": "https://lifehacker.ru/recipe/sicilijskie-ponchiki-iz-rikotty/"
+    },
+        {
+      "title": "Гарик Харламов рассказал, как ему помогает юмор",
+      "description": "Смех помогает бороться с жизненными трудностями. Об этом заявил юморист Гарик Харламов в программе Белая студия на телеканале Россия Культура",
+      "image": "https://cdn-st1.smotrim.ru/vh/pictures/xw/526/096/7.jpg",
+      "url" : "https://www.vesti.ru/article/4182764"
+    },
+        {
+      "title": "Маск с иронией прокомментировал слова Зеленского о самостоятельности Украины",
+      "description": "Американский миллиардер Илон Маск назвал потрясающим чувство юмора Владимира Зеленского после его слов о том, что избранный президент США Дональд Трамп не сможет заставить Украину сесть за стол переговоров с Россией.",
+      "image": "https://cdn-st1.smotrim.ru/vh/pictures/xw/462/857/3.jpg",
+      "url": "https://www.vesti.ru/article/4223982"
+    },
+        {
+      "title": "Телевизоры больше не нужны: могут ли их заменить домашние проекторы?",
+      "description": "Современные матрицы и оптика, которые используются в проекторах, выполняют всё больший спектр задач. Если раньше это был просто просмотр фото или другой информации в фото-режиме, то сейчас домашние проекторы приобретаются для совершенно иных функций. Стоит ли покупать себе проектор вместо телевизора или как для домашнего кинотеатра ?",
+      "image": "https://img-w.ixbt.site/live/images/original/20/28/05/2023/02/09/2e4a1f1ef9.jpg?w=877https://img-w.ixbt.site/live/images/original/20/28/05/2023/02/09/2e4a1f1ef9.jpg?w=877",
+      "url": "https://www.ixbt.com/live/offtopic/televizory-bolshe-ne-nuzhny-mogut-li-ih-zamenit-domashnie-proektory.html"
+    },
+        {
+      "title": "Обзор 11-дюймового планшета Honor Pad V9",
+      "description": "Так ли хорош и стоит ли покупать в 2025 году ?",
+      "image": "https://www.ixbt.com/img/x780x600/r30/00/02/80/87/IMG9785.jpg",
+      "url": "https://www.ixbt.com/mobilepc/honor-pad-v9-review.html"
+    },
+        {
+      "title": "Женщина воспользовалась туалетом в ресторане и украла оттуда раковину",
+      "description": "Сотрудники ресторанов не радуются, когда к ним с улицы приходят люди, не желающие ничего заказывать и намеревающиеся только сходить в туалет. но этот случай из рядо вон!",
+      "image": "https://120.su/wp-content/uploads/2025/02/25022025-leave-with-sink2.png",
+      "url": "https://120.su/2025/02/25/%d0%ba%d1%80%d0%b0%d0%b6%d0%b0-%d1%80%d0%b0%d0%ba%d0%be%d0%b2%d0%b8%d0%bd%d1%8b-%d0%b8%d0%b7-%d1%82%d1%83%d0%b0%d0%bb%d0%b5%d1%82%d0%b0/"
+    },
+        {
+      "title": "На надгробиях появились загадочные наклейки с QR-кодами",
+      "description": "Полиция Мюнхена (Германия) расследует загадку: более 1000 надгробий на городских кладбищах «украсились» странными наклейками.",
+      "image": "https://120.su/wp-content/uploads/2025/02/26022025-qr-code2.jpeg",
+      "url": "https://120.su/2025/02/26/%d0%bd%d0%b0%d0%ba%d0%bb%d0%b5%d0%b9%d0%ba%d0%b8-%d1%81-%d0%ba%d0%be%d0%b4%d0%b0%d0%bc%d0%b8-%d0%bd%d0%b0-%d0%bd%d0%b0%d0%b4%d0%b3%d1%80%d0%be%d0%b1%d0%b8%d1%8f%d1%85/"
+    },
+    {
+      "title": "iPhone 16e: стоит ли эта новинка своих денег?",
+      "description": "После длительного периода спекуляций компания Apple представила iPhone 16e – бюджетную модель в линейке iPhone 16, которая позиционируется как преемник серии iPhone SE. С целью снижения стоимости Apple внесла ряд изменений в функциональность устройства. Стоит рассмотреть отсутствующие функции и оценить целесообразность приобретения iPhone 16e.",
+      "image": "https://itcrumbs.ru/wp-content/uploads/2025/02/iPhone-16e-stoit-li-eta-novinka-svoih-deneg--800x450.jpg",
+      "url": "https://itcrumbs.ru/iphone-16e-stoit-li-eta-novinka-svoih-deneg_98742"
+    },    
+        {
+      "title": "Оборотень-пудель связывается с лунным духом в трейлере мультфильма «200% Волк»",
+      "description": "Релиз в кинотеатрах уже с 20 февраля 2025 года.",
+      "image": "https://static.kinoafisha.info/k/news/1200/upload/news/862332847696.jpg.webp",
+      "url": "https://www.kinoafisha.info/news/oboroten-pudel-svyazyvaetsya-s-lunnym-duhom-v-treylere-multfilma-200-volk/"
+    },
+        {
+      "title": "Услада для глаз: 10 фильмов, от которых ваш внутренний эстет придет в экстаз",
+      "description": "Топ 10 фильмов которые панравятся большинству, а внутренний эстет воссияет.",
+      "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXehujsBS3TJwWS0CfIFlEcKRuj3DNTzbr0S_1VT9odnCzP_8t384XZuX61uBXoASf5iFfHB5A92bZBzUtuP76D33ny8PBomGt4Gx8edc9Mompr-oASN7R1psVh-Q-3yQgAfmciFig?key=0HgZdRq2WUfdEk_2r5uBb-b1",
+      "url": "https://www.kinoafisha.info/news/uslada-dlya-glaz-10-filmov-ot-kotoryh-vash-vnutrenniy-estet-pridet-v-ekstaz/"
+    },
+        {
+      "title": "Как сделать дракона из бумаги на руку?",
+      "description": "Пошаговая инструкция и идеи для вдохновения.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2024/11/kak_sdelat_drakona_iz_bumagi_na_ruku_1732788110_lh_average_step_6.jpg",
+      "url": "https://lifehacker.ru/kak-sdelat-drakona-iz-bumagi-na-ruku/"
+    },
+        {
+      "title": "Как утеплить входную дверь в частном доме",
+      "description": "В статье вы найдёте три пошаговые инструкции, которые помогут устранить разные причины промерзания.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2024/12/Kak_uteplit_vxodnuyu_dver_v_chastnom_dome_1_1733411798_lh_big_x2.jpg",
+      "url": "https://lifehacker.ru/kak-uteplit-vxodnuyu-dver/"
+    },
+        {
+      "title": "Французский чесночный суп — такое вы ещё не пробовали",
+      "description": "Он получается очень нежным и напоминает крем-суп, хотя готовится совсем без молочных продуктов.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/02/105_1740490309.jpg",
+      "url": "https://lifehacker.ru/recipe/francuzskij-chesnochnyj-sup/"
+    },
+        {
+      "title": "Рецептик: Блинный рулет со сливочным кремом и манго",
+      "description": "Попробуйте сделать из готовых блинов красивый сладкий рулет.",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2025/02/105_1740604405.jpg",
+      "url": "https://lifehacker.ru/recipe/blinnyj-rulet-so-slivochnym-kremom-i-mango/"
+    },
+        {
+      "title": "«Такого ржача еще не встречал» и «Скрасит кучу вечеров» — в Steam вышел новый хоррор, который за день получил рейтинг 98%",
+      "description": "В раннем доступе Steam вышла забавная игра под названием R.E.P.O., которая в первый же день получила крайне положительные отзывы от геймеров. На момент написания новости ее рейтинг составляет 98%.",
+      "image": "https://files.vgtimes.ru/posts/2025-02/takogo-rzhacha-esche-ne-vstrechal-i-skrasit-kuchu-vecherov-v-steam-vyshel-novyy-horror-kotoryy-za-den-poluchil-reyting-98-121341.webp?1740625405",
+      "url": "https://vgtimes.ru/gaming-news/121341-takogo-rzhacha-esche-ne-vstrechal-i-skrasit-kuchu-vecherov-v-steam-vyshel-novyy-horror-kotoryy-za-den-poluchil-reyting-98.html"
+    },
+        {
+      "title": "Джейсон Шрайер рассказал об истории закрытия Monolith Productions и сиквеле Hogwarts Legacy",
+      "description": "Репортёр Bloomberg Джейсон Шрайер (Jason Schreier) побывал в подкасте Kinda Funny Games, где обсудил положение дел в Warner Bros. Games. 25 февраля компания закрыла Monolith Productions (серии F.E.A.R. и Middle-Earth), что шокировало многих игроков.",
+      "image": "https://files.vgtimes.ru/posts/2025-02/dzheyson-shrayer-rasskazal-ob-istorii-zakrytiya-monolith-productions-i-sikvele-hogwarts-legacy-121353.webp?1740641179",
+      "url": "https://vgtimes.ru/news/121353-dzheyson-shrayer-rasskazal-ob-istorii-zakrytiya-monolith-productions-i-sikvele-hogwarts-legacy.html"
+    },
+        {
+      "title": "В Пушкине задержали мужчину, пытавшегося украсть телефоны на 2 млн рублей",
+      "description": "В Пушкине Московской области полицейские задержали 22-летнего уроженца одной из стран ближнего зарубежья за попытку украсть со склада 13 мобильных телефонов. Об этом сообщили в ведомстве.",
+      "image": "https://cdn-st1.smotrim.ru/vh/pictures/xw/606/808/6.jpg",
+      "url": "https://www.vesti.ru/article/4379893"
+    },
+        {
+      "title": "Кибермошенники воспользовались Масленицей для обмана россиян в интернете",
+      "description": "Киберпреступники впервые использовали схему мошенничества с помощью раздачи пользователям призов в честь празднования Масленицы. Об этом пишет газета Известия со ссылкой на специалистов по информационной безопасности.",
+      "image": "https://cdn-st1.smotrim.ru/vh/pictures/xw/314/293/1.jpg",
+      "url": "https://www.vesti.ru/article/4379858"
+    },
+        {
+      "title": "России и США нужны маленькие шаги навстречу друг другу, заявил Песков",
+      "description": "Песков: России и США нужны шаги навстречу друг другу для восстановления доверия",
+      "image": "https://cdnn21.img.ria.ru/images/07e6/0b/0e/1831447527_0:217:3072:1945_1280x0_80_0_0_df1b1430f5c9c8f5facfe6a68c64e685.jpg.webp",
+      "url": "https://ria.ru/20250225/peskov-2001475507.html"
+    },
+        {
+      "title": "Медведев рассказал о значении договора о партнерстве с КНДР",
+      "description": "Медведев: договор о партнерстве с КНДР отвечает стремлению к защите суверенитета",
+      "image": "https://cdnn21.img.ria.ru/images/155709/94/1557099463_0:834:2048:1986_1280x0_80_0_0_b96845856849acf1ca5f9d35dbebcddc.jpg.webp",
+      "url": "https://ria.ru/20250226/medvedev-2001756849.html"
+    },
+        {
+      "title": "Google отказывается от SMS-аутентификации в Gmail в пользу более безопасных методов",
+      "description": "В ближайшем будущем пользователям Gmail придётся попрощаться с привычным способом двухфакторной аутентификации через SMS.",
+      "image": "https://www.ixbt.com/img/x780/n1/news/2025/1/3/gmail-will-stop-using-sms-for-two-factor-authentication_large.jpg",
+      "url": "https://www.ixbt.com/news/2025/02/26/google-sms-gmail.html"
+    },
+        {
+      "title": "Toyota Land Cruiser Prado нового поколения с адаптивной подвеской во всей красе: появились подробности и много живых фото.",
+      "description": "В Сети появились фотографии, которые демонстрируют со всех сторон новейший Toyota Land Cruiser Prado, анонсированный 27 февраля 2025 года.",
+      "image": "https://www.ixbt.com/img/x780/n1/news/2025/1/4/005NmpXfly1hyy9q2c2pzj33402c0npe_large.jpg",
+      "url": "https://www.ixbt.com/news/2025/02/27/toyota-land-cruiser-prado.html"
+    },
+    {
+      "title": "На Kickstarter собирают деньги на беспроводную низкопрофильную механическую клавиатуру Iqunix MQ80",
+
+      "description": "Заказавшие клавиатуру на Kickstarter также получат бесплатную доставку в любую точку мира.",
+
+      "image": "https://overclockers.ru/st/legacy/blog/145016/626897_O.jpeg",
+
+      "url": "https://overclockers.ru/blog/ddr77/show/210867/Na-Kickstarter-sobirajut-den-gi-na-besprovodnuju-nizkoprofil-nuju-mehanicheskuju-klaviaturu-Iqunix-MQ80"
+
+    },
      {
       "title": "Ускоряется падение курса доллара. Какой максимум обновит рубль на следующей неделе",
       "description": "Доллар стал дешеветь быстрее, чем ожидалось. Это удивило многих инвесторов. На рынок стали влиять несколько новых факторов, а экономисты сделали неожиданные прогнозы. Каким будет курс рубля на следующей неделе? 26 февраля",
