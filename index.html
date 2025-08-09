@@ -437,7 +437,7 @@ closeNewsModal.addEventListener('click', () => {
 // Функция для загрузки новостей
 async function loadNews() {
   try {
-    const response = await fetch('https://newsruaskerland.glitch.me/news.json'); // Путь к вашему файлу JSON
+    const response = await fetch('https://github.com/zloba010/newsrauskerland/blob/main/news.json'); // Путь к вашему файлу JSON
     const data = await response.json();
     console.log('Полученные данные:', data);
     displayNews(data.articles); // Отображаем новости
