@@ -184,7 +184,7 @@ function onSubmitSearch(event) {
  } else if (query.startsWith("/qr")) {
  window.open('https://zloba010.github.io/Ruaskerland/qrkod.html', '_blank');
  } else if (query.startsWith("/kliker")) {
- window.open('https://zloba010.github.io/Ruaskerland/kliker.html', '_blank');
+ window.open('https://zloba010.github.io/kliker2.0/index.html', '_blank');
  } else if (query.startsWith("/radio")) {
  if (!radioActive) {
  radioActive = true;
