@@ -306,29 +306,30 @@ document.getElementById('text-input').addEventListener('keypress', function(even
 
     /* Меню выбора сайтов */
     select {
-      margin-bottom: 10px;
-      padding: 10px;
-      font-size: 16px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 14px;
+    border: 3px solid #ad44ff;
+    background-color: #8e00ff;
+    color: white;
 
     /* IFRAME для отображения выбранных сайтов */
     iframe {
       width: 100%;
       height: calc(100vh - 100px); /* Высота зависит от высоты экрана */
       border: none;
+      border-radius: 15px;
     }
  </style>
 
 <div id="modalWindow" class="modal">
   <div class="modal-content">
     <button id="closeModalBtn" class="close-button">×</button>
-    <h2>Выберите сайт для просмотра</h2>
     <select id="siteSelector">
-      <option value="https://www.example-site.ru">Сайт 1</option>
-      <option value="https://www.second-site.ru">Сайт 2</option>
-      <option value="https://www.third-site.ru">Сайт 3</option>
+      <option value="https://vk.ru">1</option>
+      <option value="https://ok.ru">2</option>
+      <option value="https://gov.ru">3</option>
     </select>
     <iframe id="siteFrame" src="" frameborder="0"></iframe>
   </div>
